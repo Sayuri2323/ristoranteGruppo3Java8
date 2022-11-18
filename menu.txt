@@ -1,2 +1,20 @@
-Ristorante Gruppo 3
-pastaAlPesto
+                                               Ristorante Gruppo 3
+
+                                                  MENU' CARNE
+
+
+
+
+
+
+
+
+
+                                                SECONDI PIATTI
+-Scaloppine al limone.                                                                                           20,00€
+-Peperoni ripieni di carne e salsiccia.                                                                          18,50€
+-Arrosto di vitello al forno con patate.                                                                         25,00€
+-Spezzatino di maiale.                                                                                           12,00€
+-Filetto di maiale con salsa al vino.                                                                            35,00€
+-Costoletta alla milanese.                                                                                       10,00€
+-Braciole di maiale con crema di zucca e taleggio.                                                               17,00€
