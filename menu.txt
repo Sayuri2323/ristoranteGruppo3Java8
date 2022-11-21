@@ -1,6 +1,7 @@
-                                               Ristorante Gruppo 3
+                                             Ristorante Gruppo 3
 
-                                                  MENU' CARNE
+                                                MENU' CARNE
+                                                PRIMI PIATTI
 -Spaghetti alla carbonara                                                                                        18,00€
 -Pappardelle al sugo di cinghiale                                                                                16,00€
 -Agnolotti con sugo di brasato                                                                                   22,00€
