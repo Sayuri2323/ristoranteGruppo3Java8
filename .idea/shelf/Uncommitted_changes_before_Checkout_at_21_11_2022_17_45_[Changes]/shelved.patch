@@ -1,0 +1,41 @@
+Index: menu.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/menu.txt b/menu.txt
+--- a/menu.txt	
++++ b/menu.txt	
+@@ -1,6 +1,7 @@
+                                                Ristorante Gruppo 3
+ 
+                                                   MENU' CARNE
++                                                  PRIMI PIATTI
+ -Spaghetti alla carbonara                                                                                        18,00€
+ -Pappardelle al sugo di cinghiale                                                                                16,00€
+ -Agnolotti con sugo di brasato                                                                                   22,00€
+@@ -10,7 +11,7 @@
+ -Risotto zafferano e salsiccia                                                                                   18,00€
+ 
+ 
+-                                                SECONDI PIATTI
++                                                  SECONDI PIATTI
+ -Scaloppine al limone.                                                                                           20,00€
+ -Peperoni ripieni di carne e salsiccia.                                                                          18,50€
+ -Arrosto di vitello al forno con patate.                                                                         25,00€
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,10 +2,6 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_16_03_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_16_03__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/menu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/menu.txt" afterDir="false" />
+     </list>
