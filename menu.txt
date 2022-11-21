@@ -1,13 +1,13 @@
                                                Ristorante Gruppo 3
 
                                                   MENU' CARNE
-
-
-
-
-
-
-
+-Spaghetti alla carbonara                                                                                        18,00€
+-Pappardelle al sugo di cinghiale                                                                                16,00€
+-Agnolotti con sugo di brasato                                                                                   22,00€
+-Ravioli alla bolognese                                                                                          16,00€
+-Tagliatelle al ragù di cervo                                                                                    22,00€
+-Maltagliati al petto d'anatra                                                                                   25,00€
+-Risotto zafferano e salsiccia                                                                                   18,00€
 
 
                                                 SECONDI PIATTI
