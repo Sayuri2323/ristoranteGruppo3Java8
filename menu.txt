@@ -19,3 +19,10 @@
 -Filetto di maiale con salsa al vino.                                                                            35,00€
 -Costoletta alla milanese.                                                                                       10,00€
 -Braciole di maiale con crema di zucca e taleggio.                                                               17,00€
+
+
+                                                    BEVANDE
+-Acqua minerale                                                                                                   1,50€
+-Acqua gassata                                                                                                    1,50€
+-Vino                                                                                                            15,00€
+-Pepsi                                                                                                            2,50€
