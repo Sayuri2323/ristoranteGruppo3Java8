@@ -1,0 +1,51 @@
+Index: src/Portata.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package src;\r\n\r\npublic class Portata {\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Portata.java b/src/Portata.java
+--- a/src/Portata.java	(revision 337b74bff3848ce0766933757f102bb0f5061f3c)
++++ b/src/Portata.java	(date 1669226245290)
+@@ -1,4 +1,38 @@
+ package src;
+ 
+-public class Portata {
++import java.util.ArrayList;
++import java.util.List;
++
++public abstract class Portata implements IPortata {
++
++   private String namePortata;
++   private double pricePortata;
++
++   private String typePortata;
++
++    public Portata(String namePortata, double pricePortata,String typePortata) {
++        this.namePortata = namePortata;
++        this.pricePortata = pricePortata;
++        this.typePortata = typePortata;
++    }
++
++    public String getNamePortata() {
++        return namePortata;
++    }
++
++    public double getPricePortata() {
++        return pricePortata;
++    }
++
++    @Override
++    public String getTypePortata() {
++        return typePortata;
++    }
++
++    void printPortata(){
++
++        System.out.println(namePortata + " " + pricePortata);
++    }
++
++
+ }
+\ No newline at end of file

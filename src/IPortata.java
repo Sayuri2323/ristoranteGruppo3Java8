@@ -1,5 +1,6 @@
 package src;
 
 public interface IPortata {
-    String getTypePortata();
+    EnumPortataType getTypePortata();
+    void printPortata ();
 }

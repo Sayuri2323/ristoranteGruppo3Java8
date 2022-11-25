@@ -1,16 +1,14 @@
 package src;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract class Portata implements IPortata {
 
    private String namePortata;
    private double pricePortata;
 
-   private String typePortata;
+   private EnumPortataType typePortata;
 
-    public Portata(String namePortata, double pricePortata,String typePortata) {
+    public Portata(String namePortata, double pricePortata,EnumPortataType typePortata) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typePortata;
@@ -25,14 +23,11 @@ public abstract class Portata implements IPortata {
     }
 
     @Override
-    public String getTypePortata() {
+    public EnumPortataType getTypePortata() {
         return typePortata;
     }
 
-    void printPortata(){
-
-        System.out.println(namePortata + " " + pricePortata);
+    public void printPortata(){
+        System.out.println(namePortata + " " + pricePortata + "€");
     }
-
-
 }

@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IPortata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_2022_18_57_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_2022_18_57__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_23_11_2022_18_57_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_23_11_2022_18_57__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_2022_18_57_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_2022_18_57__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/shelf/Uncommitted_changes_before_Merge_at_23_11_2022_18_57_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/shelf/Uncommitted_changes_before_Merge_at_23_11_2022_18_57__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/EnumPortataType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Menu$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EnumPortataType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/SecondiPiatti.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/IPortata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/IPortata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Portata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Portata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/SecondiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/SecondiPiatti.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IPortata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPortata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Portata.java" afterDir="false" />
     </list>
@@ -18,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sayuri/Desktop/ristoranteGruppo3Java8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/franc/OneDrive/Desktop/programmazione/java/ristoranteGruppo3Java8&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
