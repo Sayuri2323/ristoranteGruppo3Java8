@@ -12,6 +12,6 @@ public class SecondiPiatti extends Portata implements IPortata {
     }
     @Override
     public void printPortata(){
-        System.out.println(getNamePortata() + " " + getPricePortata() + "€");
+        super.printPortata();
     }
 }

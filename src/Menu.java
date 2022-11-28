@@ -9,8 +9,7 @@ public class Menu {
     private String typeOfMenu;
 
 
-
-    public List <IPortata> listaPortate = new ArrayList<>();
+    public List<IPortata> listaPortate = new ArrayList<>();
 
     public Menu(String resturantName, String typeOfMenu) {
         this.resturantName = resturantName;
@@ -28,42 +27,24 @@ public class Menu {
     public void printMenu() {
         System.out.println("---------------------------" + resturantName + "--------------------------------\n");
         System.out.println("------------------------------" + typeOfMenu + "-----------------------------------\n");
-        printVociMenu();
+        System.out.println("\n\n---------------------------------ANTIPASTI------------------------------------\n\n");
+        stampaVoceMenu(EnumPortataType.ANTIPASTO);
+        System.out.println("\n\n--------------------------------PRIMI PIATTI----------------------------------\n\n");
+        stampaVoceMenu(EnumPortataType.PRIMO);
+        System.out.println("\n\n-------------------------------SECONDI PIATTI---------------------------------\n\n");
+        stampaVoceMenu(EnumPortataType.SECONDO);
+        System.out.println("\n\n-----------------------------------BEVANDE------------------------------------\n\n");
+        stampaVoceMenu(EnumPortataType.BEVANDA);
+        System.out.println("\n\n-----------------------------------DESSERT-----------------------------------\n\n");
+        stampaVoceMenu(EnumPortataType.DESSERT);
     }
 
-    public void printVociMenu(){
-            System.out.println("\n\n---------------------------------ANTIPASTI------------------------------------\n\n");
-            listaPortate.stream().forEach(s -> {
-                if (s.getTypePortata() == EnumPortataType.ANTIPASTO) {
-                    s.printPortata();
-                }
-            });
-           System.out.println("\n\n--------------------------------PRIMI PIATTI----------------------------------\n\n");
-           listaPortate.stream().forEach(s -> {
-               if (s.getTypePortata() == EnumPortataType.PRIMO) {
-                   s.printPortata();
-               }
-           });
-           System.out.println("\n\n-------------------------------SECONDI PIATTI---------------------------------\n\n");
-           listaPortate.stream().forEach(s -> {
-               if (s.getTypePortata() == EnumPortataType.SECONDO) {
-                   s.printPortata();
-               }
-           });
-           System.out.println("\n\n-----------------------------------BEVANDE------------------------------------\n\n");
-           listaPortate.stream().forEach(s -> {
-               if (s.getTypePortata() == EnumPortataType.BEVANDA) {
-                   s.printPortata();
-               }
-           });
-           System.out.println("\n\n-----------------------------------DESSERT-----------------------------------\n\n");
-           listaPortate.stream().forEach(s -> {
-               if (s.getTypePortata() == EnumPortataType.DESSERT) {
-                   s.printPortata();
-               }
-           });
-       }
+    private void stampaVoceMenu(EnumPortataType type) {
+        listaPortate.stream().forEach(s -> {
+            if (s.getTypePortata() == type) {
+                s.printPortata();
+            }
+        });
     }
-
-
+}
 

@@ -28,6 +28,6 @@ public abstract class Portata implements IPortata {
     }
 
     public void printPortata(){
-        System.out.println(namePortata + " " + pricePortata + "€");
+        System.out.println(namePortata + " " + String.format("%.2f",pricePortata) + "€");
     }
 }
