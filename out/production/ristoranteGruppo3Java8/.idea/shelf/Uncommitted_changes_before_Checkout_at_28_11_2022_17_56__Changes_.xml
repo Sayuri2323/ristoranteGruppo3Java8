@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_28_11_2022_17_56_[Changes]" date="1669654620283" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 28/11/2022 17:56 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ristoranteGruppo3Java8/src/SecondiPiatti.class" />
+    <option name="AFTER_PATH" value="out/production/ristoranteGruppo3Java8/src/SecondiPiatti.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56_[Changes]/SecondiPiatti.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ristoranteGruppo3Java8/src/Menu.class" />
+    <option name="AFTER_PATH" value="out/production/ristoranteGruppo3Java8/src/Menu.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56_[Changes]/Menu.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ristoranteGruppo3Java8/Tester.class" />
+    <option name="AFTER_PATH" value="out/production/ristoranteGruppo3Java8/Tester.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56_[Changes]/Tester.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ristoranteGruppo3Java8/src/Portata.class" />
+    <option name="AFTER_PATH" value="out/production/ristoranteGruppo3Java8/src/Portata.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56_[Changes]/Portata.class" />
+  </binary>
+</changelist>

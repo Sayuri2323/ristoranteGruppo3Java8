@@ -37,6 +37,7 @@ public class Menu {
         stampaVoceMenu(EnumPortataType.BEVANDA);
         System.out.println("\n\n-----------------------------------DESSERT-----------------------------------\n\n");
         stampaVoceMenu(EnumPortataType.DESSERT);
+
     }
 
     private void stampaVoceMenu(EnumPortataType type) {

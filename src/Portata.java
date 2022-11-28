@@ -1,12 +1,12 @@
 package src;
 
-
 public abstract class Portata implements IPortata {
 
    private String namePortata;
    private double pricePortata;
 
    private EnumPortataType typePortata;
+
 
     public Portata(String namePortata, double pricePortata,EnumPortataType typePortata) {
         this.namePortata = namePortata;

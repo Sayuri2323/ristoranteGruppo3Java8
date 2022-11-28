@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Antipasti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bevande.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dessert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IPortata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Portata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrimiPiatti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SecondiPiatti.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="esercizio-con-enum" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +78,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="Antipasti" />
                       </list>
                     </value>
                   </entry>

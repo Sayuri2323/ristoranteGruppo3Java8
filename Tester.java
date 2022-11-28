@@ -3,7 +3,7 @@ import src.*;
 public class Tester {
 
     public static void main(String[] args) {
-        Menu menu=new Menu("Ristorante Gruppo 3", "Menu di carne");
+        Menu menu=new Menu("RISTORANTE GRUPPO 3", "MENU' DI CARNE");
         menu.listaPortate.add(new Antipasti("Crostini con salame felino",8));
         menu.listaPortate.add(new Antipasti("Tartare di manzo gourmet",25));
         menu.listaPortate.add(new Antipasti("Mousse di mortadella",13));
