@@ -3,8 +3,18 @@ import src.*;
 public class Tester {
 
     public static void main(String[] args) {
-
         Menu menu=new Menu("Ristorante Gruppo 3", "Menu di carne");
+        menu.listaPortate.add(new Antipasti("Crostini con salame felino",8));
+        menu.listaPortate.add(new Antipasti("Tartare di manzo gourmet",25));
+        menu.listaPortate.add(new Antipasti("Mousse di mortadella",13));
+        menu.listaPortate.add(new Antipasti("Bignè salati ripieni",8));
+        menu.listaPortate.add(new PrimiPiatti("Spaghetti alla carbonara", 18));
+        menu.listaPortate.add(new PrimiPiatti("Pappardelle al sugo di cinghiale",16));
+        menu.listaPortate.add(new PrimiPiatti("Agnolotti con sugo di brasato", 22));
+        menu.listaPortate.add(new PrimiPiatti("Ravioli alla bolognese", 16));
+        menu.listaPortate.add(new PrimiPiatti("Tagliatelle al ragù di cervo", 22));
+        menu.listaPortate.add(new PrimiPiatti("Maltagliati al petto d'anatra", 25));
+        menu.listaPortate.add(new PrimiPiatti("Risotto zafferano e salsiccia", 18));
         menu.listaPortate.add(new SecondiPiatti("Scaloppine al limone", 20));
         menu.listaPortate.add(new SecondiPiatti("Peperoni ripieni di carne e salsiccia", 18.50));
         menu.listaPortate.add(new SecondiPiatti("Arrosto di vitello al forno con patate", 25));
@@ -20,7 +30,9 @@ public class Tester {
         menu.listaPortate.add(new Dessert("Tiramisu",7));
         menu.listaPortate.add(new Dessert("torta di mandorle",15));
         menu.listaPortate.add(new Dessert("Crostata di marmellata",20));
+
         menu.printMenu();
+
 
 
 
