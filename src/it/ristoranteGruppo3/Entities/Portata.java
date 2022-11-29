@@ -6,11 +6,9 @@ public abstract class Portata implements IPortata {
 
    private String namePortata;
    private double pricePortata;
-
    private EnumPortataType typePortata;
 
-
-    public Portata(String namePortata, double pricePortata,EnumPortataType typePortata) {
+   public Portata(String namePortata, double pricePortata,EnumPortataType typePortata) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typePortata;
@@ -29,6 +27,9 @@ public abstract class Portata implements IPortata {
         return typePortata;
     }
 
+    /**
+     * Questo metodo stampa la portata nel seguente format nomePortata prezzoConDueDecimali€
+     */
     public void printPortata(){
         System.out.println(namePortata + " " + String.format("%.2f",pricePortata) + "€");
     }

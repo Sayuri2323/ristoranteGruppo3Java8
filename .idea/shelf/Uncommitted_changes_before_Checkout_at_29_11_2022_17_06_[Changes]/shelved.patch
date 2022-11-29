@@ -1,0 +1,73 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,27 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_17_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_17_45__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_2022_18_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_2022_18_57__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_11_2022_17_56__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_23_11_2022_18_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_23_11_2022_18_57__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_21__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tester.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Menu.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Portata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/Portata.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/SecondiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/src/SecondiPiatti.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Antipasti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Antipasti.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Bevande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bevande.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dessert.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/EnumPortataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnumPortataType.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/IPortata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPortata.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Portata.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/PrimiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrimiPiatti.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -41,7 +21,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="develop" />
++        <entry key="$PROJECT_DIR$" value="Test" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -57,17 +37,17 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mammt/ristoranteGruppo3Java8&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "last_opened_file_path": "C:/Users/franc/OneDrive/Desktop/programmazione/java/eserciziJavaAvanzato/ExerciseStreams2",
++    "project.structure.last.edited": "Project",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2"
+   }
+-}</component>
++}]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
