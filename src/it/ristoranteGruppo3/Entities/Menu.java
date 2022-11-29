@@ -8,7 +8,7 @@ import java.util.List;
 public class Menu {
     private String resturantName;
     private String typeOfMenu;
-    public List<IPortata> listaPortate = new ArrayList<>();
+    public List<Portata> listaPortate = new ArrayList<>();
     public Menu(String resturantName, String typeOfMenu) {
         this.resturantName = resturantName;
         this.typeOfMenu = typeOfMenu;

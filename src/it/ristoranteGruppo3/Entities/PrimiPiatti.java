@@ -8,12 +8,10 @@ import it.ristoranteGruppo3.Interfaces.IPortata;
  * @author Giulia Botto
  */
 
-public class PrimiPiatti extends Portata implements IPortata {
+public class PrimiPiatti extends Portata {
     public PrimiPiatti(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.PRIMO);
     }
-    @Override
-    public void printPortata(){super.printPortata();
-    }
+
 }
 

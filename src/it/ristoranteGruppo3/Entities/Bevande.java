@@ -8,7 +8,7 @@ import it.ristoranteGruppo3.Interfaces.IPortata;
  * @author Raffaele Cuccaro
  */
 
-public class Bevande extends Portata implements IPortata {
+public class Bevande extends Portata {
 
     public Bevande(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.BEVANDA);

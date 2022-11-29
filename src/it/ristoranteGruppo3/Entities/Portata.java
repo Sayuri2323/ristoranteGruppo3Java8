@@ -8,12 +8,14 @@ public abstract class Portata implements IPortata {
    private double pricePortata;
    private EnumPortataType typePortata;
 
+   //TODO se una classe è asbtract a che serve
    public Portata(String namePortata, double pricePortata,EnumPortataType typePortata) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typePortata;
     }
 
+    //TODO regole di cleaning code?! prima i metodi in override
     public String getNamePortata() {
         return namePortata;
     }
@@ -21,6 +23,7 @@ public abstract class Portata implements IPortata {
     public double getPricePortata() {
         return pricePortata;
     }
+
 
     @Override
     public EnumPortataType getTypePortata() {
