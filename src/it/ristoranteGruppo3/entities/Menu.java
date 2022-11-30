@@ -1,6 +1,4 @@
-package it.ristoranteGruppo3.Entities;
-
-import it.ristoranteGruppo3.Interfaces.IPortata;
+package it.ristoranteGruppo3.entities;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,4 @@
-package it.ristoranteGruppo3.Entities;
-
-import it.ristoranteGruppo3.Interfaces.IPortata;
+package it.ristoranteGruppo3.entities;
 
 /**
  * Questa classe rappresenta i primi piatti del nostro menu'.

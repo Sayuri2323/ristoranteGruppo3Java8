@@ -1,8 +1,6 @@
-package it.ristoranteGruppo3.Main;
-import it.ristoranteGruppo3.Entities.*;
+import it.ristoranteGruppo3.entities.*;
 
 public class Tester {
-
     public static void main(String[] args) {
         Menu menu=new Menu("RISTORANTE GRUPPO 3", "MENU' DI CARNE");
         menu.listaPortate.add(new Antipasti("Crostini con salame felino",8));

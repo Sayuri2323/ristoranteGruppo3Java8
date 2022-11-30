@@ -1,7 +1,5 @@
-package it.ristoranteGruppo3.Entities;
+package it.ristoranteGruppo3.entities;
 
-
-import it.ristoranteGruppo3.Interfaces.IPortata;
 
 /**
  * Questa classe rappresenta le bevande del nostro menu'.
@@ -12,9 +10,5 @@ public class Bevande extends Portata {
 
     public Bevande(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.BEVANDA);
-    }
-    @Override
-    public void printPortata(){
-        super.printPortata();
     }
 }

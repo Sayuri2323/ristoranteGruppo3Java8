@@ -1,4 +1,4 @@
-package it.ristoranteGruppo3.Entities;
+package it.ristoranteGruppo3.entities;
 
 /**
  * Questa enumerazione elenca tutti i valori del campo typePortata della classe Portata

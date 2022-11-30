@@ -1,7 +1,5 @@
-package it.ristoranteGruppo3.Entities;
+package it.ristoranteGruppo3.entities;
 
-
-import it.ristoranteGruppo3.Interfaces.IPortata;
 
 /**
  * Questa classe rappresenta gli antipasti del nostro menu'.
@@ -9,12 +7,10 @@ import it.ristoranteGruppo3.Interfaces.IPortata;
  * @author Giulia Botto
  */
 
-public class Antipasti extends Portata implements IPortata {
+public class Antipasti extends Portata {
 
     public Antipasti(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.ANTIPASTO);
     }
-    @Override
-    public void printPortata(){super.printPortata();
-    }
+
 }
