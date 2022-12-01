@@ -30,7 +30,12 @@ public class Tester {
         menu.listaPortate.add(new Dessert("torta di mandorle",15));
         menu.listaPortate.add(new Dessert("Crostata di marmellata",20));
 
-        menu.printMenu();
+        Ristorante r=new Ristorante("Ristorante Gruppi 3","Privet Drive n.4","Tradizionale",23);
+        r.menuRistorante.add(menu);
+        r.menuRistorante.stream().forEach(s->{
+            s.printMenu();
+        });
+
 
 
 
