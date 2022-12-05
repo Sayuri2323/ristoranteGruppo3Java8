@@ -6,9 +6,9 @@ package it.ristoranteGruppo3.entities;
  * @author Raffaele Cuccaro
  */
 
-public class Bevande extends Portata {
+public class Bevanda extends Portata {
 
-    public Bevande(String namePortata, double pricePortata) {
+    public Bevanda(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.BEVANDA);
     }
 }

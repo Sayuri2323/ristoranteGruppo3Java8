@@ -1,5 +1,6 @@
 package it.ristoranteGruppo3.entities;
 
+import javax.swing.plaf.PanelUI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,6 @@ public class Ristorante {
     private  String name;
     private String address;
     private String typeRistorante;
-
     private int capienza;
 
     public List<Menu> menuRistorante=new ArrayList<>();
@@ -21,14 +21,12 @@ public class Ristorante {
     }
 
 
-
-
-
-
-
-
-
-
+    public void printAllMenu(){
+        System.out.println("---------------------------" + this.name + "---------------------------\n");
+        for (Menu m: menuRistorante ) {
+            m.printMenu();
+        }
+    }
 
 
     public String getName() {
@@ -41,10 +39,6 @@ public class Ristorante {
 
     public String getAddress() {
         return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getTypeRistorante() {

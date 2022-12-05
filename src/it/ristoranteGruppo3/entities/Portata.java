@@ -10,10 +10,7 @@ public class Portata {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typePortata;
-    }
 
-    public EnumPortataType getTypePortata() {
-        return typePortata;
     }
 
     /**
@@ -30,5 +27,10 @@ public class Portata {
     public double getPricePortata() {
         return pricePortata;
     }
+
+    public EnumPortataType getTypePortata() {
+        return typePortata;
+    }
+
 
 }

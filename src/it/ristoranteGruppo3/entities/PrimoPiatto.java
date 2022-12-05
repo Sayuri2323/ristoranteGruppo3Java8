@@ -6,8 +6,8 @@ package it.ristoranteGruppo3.entities;
  * @author Giulia Botto
  */
 
-public class PrimiPiatti extends Portata {
-    public PrimiPiatti(String namePortata, double pricePortata) {
+public class PrimoPiatto extends Portata {
+    public PrimoPiatto(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.PRIMO);
     }
 

@@ -5,9 +5,9 @@ package it.ristoranteGruppo3.entities;
  * @author Sepe Francesco
  */
 
-public class SecondiPiatti extends Portata {
+public class SecondoPiatto extends Portata {
 
-    public SecondiPiatti(String namePortata, double pricePortata) {
+    public SecondoPiatto(String namePortata, double pricePortata) {
         super(namePortata, pricePortata, EnumPortataType.SECONDO);
     }
 
