@@ -14,18 +14,9 @@ public class Menu {
      * Questo metodo Stampa l'intero menu' secondo l'ordine stabilito dall' EnumPortataType
      */
     public void printMenu() {
-        System.out.println("\n------------------------------" + typeOfMenu + "-----------------------------------\n");
-        System.out.println("\n\n---------------------------------ANTIPASTI------------------------------------\n\n");
-        stampaVoceMenu(EnumPortataType.ANTIPASTO);
-        System.out.println("\n\n--------------------------------PRIMI PIATTI----------------------------------\n\n");
-        stampaVoceMenu(EnumPortataType.PRIMO);
-        System.out.println("\n\n-------------------------------SECONDI PIATTI---------------------------------\n\n");
-        stampaVoceMenu(EnumPortataType.SECONDO);
-        System.out.println("\n\n-----------------------------------BEVANDE------------------------------------\n\n");
-        stampaVoceMenu(EnumPortataType.BEVANDA);
-        System.out.println("\n\n-----------------------------------DESSERT-----------------------------------\n\n");
-        stampaVoceMenu(EnumPortataType.DESSERT);
-
+        for (Portata portata : listaPortate){
+            portata.printPortata();
+        }
     }
 
     /**

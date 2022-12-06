@@ -4,9 +4,9 @@ public class Portata {
 
    private String namePortata;
    private double pricePortata;
-   private EnumPortataType typePortata;
+   private TypeEnum typePortata;
 
-   public Portata(String namePortata, double pricePortata,EnumPortataType typePortata) {
+   public Portata(String namePortata, double pricePortata,TypeEnum typeEnum) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typePortata;
