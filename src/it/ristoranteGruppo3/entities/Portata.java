@@ -28,9 +28,6 @@ public class Portata {
         return pricePortata;
     }
 
-    public EnumPortataType getTypePortata() {
-        return typePortata;
-    }
 
 
 }

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    private String typeOfMenu;
+    private TypeEnum typeOfMenu;
     public List<Portata> listaPortate = new ArrayList<>();
-    public Menu(String typeOfMenu) {
+    public Menu(TypeEnum typeOfMenu) {
         this.typeOfMenu = typeOfMenu;
     }
 
@@ -19,19 +19,7 @@ public class Menu {
         }
     }
 
-    /**
-     * Questo metodo cicla il parametro List<IPortata> listaPortate e stampa solo le portate presenti di tipo
-     * Type
-     * @param type stabilisce quali portate vanno stampate.
-     */
-    private void stampaVoceMenu(EnumPortataType type) {
-        listaPortate.stream().forEach(s -> {
-            if (s.getTypePortata() == type) {
-                s.printPortata();
-            }
-        });
-    }
-    public String getTypeOfMenu() {
+    public TypeEnum getTypeOfMenu() {
         return typeOfMenu;
     }
 }

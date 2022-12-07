@@ -9,8 +9,10 @@ package it.ristoranteGruppo3.entities;
 
 public class Antipasto extends Portata {
 
-    public Antipasto(String namePortata, double pricePortata) {
-        super(namePortata, pricePortata, EnumPortataType.ANTIPASTO);
+    public Antipasto(String namePortata, double pricePortata, TypeEnum typeEnum) {
+        super(namePortata, pricePortata, typeEnum);
+
+
     }
 
 }

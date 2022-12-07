@@ -1,22 +1,19 @@
 package it.ristoranteGruppo3.entities;
 
-import javax.swing.plaf.PanelUI;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ristorante {
     private  String name;
     private String address;
-    private String typeRistorante;
     private int capienza;
 
     public List<Menu> menuRistorante=new ArrayList<>();
 
 
-    public Ristorante(String name, String address, String typeRistorante, int capienza) {
+    public Ristorante(String name, String address, int capienza) {
         this.name = name;
         this.address = address;
-        this.typeRistorante = typeRistorante;
         this.capienza=capienza;
     }
 
@@ -24,6 +21,7 @@ public class Ristorante {
     public void printAllMenu(){
         System.out.println("---------------------------" + this.name + "---------------------------\n");
         for (Menu m: menuRistorante ) {
+            System.out.println("------------------------" + " " + m.getTypeOfMenu() + "------------------------");
             m.printMenu();
         }
     }
@@ -41,11 +39,4 @@ public class Ristorante {
         return address;
     }
 
-    public String getTypeRistorante() {
-        return typeRistorante;
-    }
-
-    public void setTypeRistorante(String typeRistorante) {
-        this.typeRistorante = typeRistorante;
-    }
 }

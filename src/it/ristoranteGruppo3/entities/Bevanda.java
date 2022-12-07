@@ -8,7 +8,7 @@ package it.ristoranteGruppo3.entities;
 
 public class Bevanda extends Portata {
 
-    public Bevanda(String namePortata, double pricePortata) {
-        super(namePortata, pricePortata, EnumPortataType.BEVANDA);
+    public Bevanda(String namePortata, double pricePortata,TypeEnum typeEnum) {
+        super(namePortata, pricePortata, typeEnum);
     }
 }
