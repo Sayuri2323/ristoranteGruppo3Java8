@@ -5,9 +5,10 @@ import java.util.List;
 
 public class Menu {
     private TypeEnum typeOfMenu;
-    public List<Portata> listaPortate = new ArrayList<>();
+    private List<Portata> listaPortate;
     public Menu(TypeEnum typeOfMenu) {
         this.typeOfMenu = typeOfMenu;
+        this.listaPortate = new ArrayList<>();
     }
 
     /**
@@ -21,6 +22,14 @@ public class Menu {
 
     public TypeEnum getTypeOfMenu() {
         return typeOfMenu;
+    }
+
+    public List<Portata> getListaPortate() {
+        return listaPortate;
+    }
+
+    public void addPortata(Portata portata) {
+        getListaPortate().add(portata);
     }
 }
 
