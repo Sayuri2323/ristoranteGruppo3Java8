@@ -21,7 +21,7 @@ public class Ristorante {
     public void printAllMenu(){
         System.out.println("---------------------------" + this.name + "---------------------------\n");
         for (Menu m: menuRistorante ) {
-            System.out.println("------------------------" + " " + m.getTypeOfMenu() + "------------------------");
+            System.out.println("------------------------" + "MENU " + m.getTypeOfMenu() + "------------------------");
             m.printMenu();
         }
     }
