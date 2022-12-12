@@ -82,10 +82,5 @@ public class Tester {
 
         //stampiamo tutti i menu
         ristoranteGruppo3.printAllMenu();
-
-
-
-
-
     }
 }

@@ -3,7 +3,7 @@ package it.ristoranteGruppo3.entities;
 public class Cliente {
     private String name;
     private String surname;
-    private int age;
+    private int age;//ci serve?
     private TypeEnum type;
     private boolean hasBooked = false;
 
@@ -24,7 +24,7 @@ public class Cliente {
     }
 
     public String getOrdinazione(Menu menu){
-        //todo
+        //todo, ci serve?
         return "";
     }
 
