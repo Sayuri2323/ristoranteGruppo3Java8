@@ -8,6 +8,12 @@ public class Ristorante {
     private String address;
     private int capienza;
 
+    private List<Cliente> clienti = new ArrayList<>(); //da implementare?
+
+    private List<Tavolo> tavoli = new ArrayList<>();//da implementare?
+
+
+
     private List<Menu> menuRistorante=new ArrayList<>();
 
 
@@ -40,4 +46,11 @@ public class Ristorante {
         return address;
     }
 
+    public List<Menu> getMenuRistorante() {
+        return menuRistorante;
+    }
+
+    public void addMenuRistorante(Menu menu) {
+        getMenuRistorante().add(menu);
+    }
 }

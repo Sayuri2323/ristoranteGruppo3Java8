@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="inserita classe Ristorante">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_17_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_17_45__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_11_2022_17_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_11_2022_17_06__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_21__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Ristorante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Ristorante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/TypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/TypeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/develhope/untitled4/ristoranteGruppo3Java8/out",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/develhope/untitled4/ristoranteGruppo3Java8/out&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\franc\OneDrive\Desktop\programmazione\java\ristoranteGruppo3Java8\.idea" />

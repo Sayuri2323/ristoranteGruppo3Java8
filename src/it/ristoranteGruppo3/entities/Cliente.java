@@ -3,14 +3,14 @@ package it.ristoranteGruppo3.entities;
 public class Cliente {
     private String name;
     private String surname;
-    private int age;//ci serve?
     private TypeEnum type;
     private boolean hasBooked = false;
 
-    public Cliente(String name, String surname, int age, TypeEnum type) {
+    private Tavolo tavolo;
+
+    public Cliente(String name, String surname, TypeEnum type) {
         this.name = name;
         this.surname = surname;
-        this.age = age;
         this.type = type;
     }
 
@@ -19,13 +19,11 @@ public class Cliente {
         return "Cliente{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", age=" + age +
                 '}';
     }
 
-    public String getOrdinazione(Menu menu){
-        //todo, ci serve?
-        return "";
+    public void getOrdinazione(Portata portata) {
+        tavolo.addPortataOrdinazione(portata);
     }
 
 
@@ -45,14 +43,6 @@ public class Cliente {
         this.surname = surname;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public TypeEnum getType() {
         return type;
     }
@@ -67,5 +57,13 @@ public class Cliente {
 
     public void setHasBooked(boolean hasBooked) {
         this.hasBooked = hasBooked;
+    }
+
+    public Tavolo getTavolo() {
+        return tavolo;
+    }
+
+    public void setTavolo(Tavolo tavolo) {
+            this.tavolo = tavolo;
     }
 }

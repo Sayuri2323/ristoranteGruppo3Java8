@@ -5,10 +5,9 @@ import java.util.List;
 
     public class Tavolo {
         private int numeroTavolo;
-        private int numeroCoperti;// da vedere dove piazzare
-        private double saldoTotale;//decidere se inserire qui o su Cliente
+        private double conto;//decidere se inserire qui o su Cliente
         private List<Portata> ordinazione=new ArrayList<>();//decidere se inserire qui o su Cliente
-        private List<Cliente> listaClienti=new ArrayList<>();// da approvare
+
         private boolean eRiservato;
 
         public Tavolo(int numeroTavolo, boolean eRiservato) {
@@ -23,8 +22,27 @@ import java.util.List;
                     ", eRiservato=" + eRiservato +
                     '}';
         }
-        public void prendiOrdine(Portata portata){       //è utile o migliorabile
-            System.out.println(portata.getNamePortata()+" "+portata.getPricePortata()+" €");
+        //il conto va bene void oppure vogliamo un return double?
+        public void getConto() {
+            double x=0;
+            System.out.print("Il conto è di ");
+            for (Portata portata:ordinazione) {
+                x=portata.getPricePortata()+x;
+            }
+            conto =x;
+            System.out.println( String.format("%.2f",conto) + "€");
+        }
+
+        public void addPortataOrdinazione(Portata ordinazione) {
+            this.ordinazione.add(ordinazione);
+
+        }
+
+        public void printOrdinazione(){
+            System.out.println("Ordinazione del tavolo " + this.numeroTavolo);
+            for (Portata p:this.ordinazione) {
+                p.printPortata();
+            }
         }
 
 
@@ -44,31 +62,9 @@ import java.util.List;
             this.numeroTavolo = numeroTavolo;
         }
 
-        public int getNumeroCoperti() {
-            return numeroCoperti;
-        }
-
-        public void setNumeroCoperti(int numeroCoperti) {
-            this.numeroCoperti = numeroCoperti;
-        }
-
-        public double getSaldoTotale() {
-            double x=0;
-            for (Portata portata:ordinazione) {
-                x=portata.getPricePortata()+x;
-            }
-           saldoTotale=x;
-            return x;
-        }
-
 
         public List<Portata> getOrdinazione() {
             return ordinazione;
-        }
-
-        public void addPortataOrdinazione(Portata ordinazione) {
-            this.ordinazione.add(ordinazione);
-
         }
     }
 
