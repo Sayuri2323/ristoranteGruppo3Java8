@@ -8,7 +8,8 @@ public class Ristorante {
     private String address;
     private int capienza;
 
-    public List<Menu> menuRistorante=new ArrayList<>();
+    private List<Menu> menuRistorante=new ArrayList<>();
+
 
 
     public Ristorante(String name, String address, int capienza) {
