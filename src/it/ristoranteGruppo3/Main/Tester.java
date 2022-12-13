@@ -82,5 +82,18 @@ public class Tester {
 
         //stampiamo tutti i menu
         ristoranteGruppo3.printAllMenu();
+        System.out.println("--------------------------------------------------");
+
+        Tavolo t1=new Tavolo(2,false);
+        t1.addPortataOrdinazione(menuCarne.getListaPortate().get(4));
+        t1.addPortataOrdinazione(menuCarne.getListaPortate().get(10));
+        t1.addPortataOrdinazione(menuCarne.getListaPortate().get(15));
+
+        for (Portata portata: t1.getOrdinazione())
+        {portata.printPortata();}
+
+        t1.prendiOrdine(menuCarne.getListaPortate().get(4));// si può gettare l'elemento tramite nomePortata
+        System.out.println(t1.getSaldoTotale());
+
     }
 }
