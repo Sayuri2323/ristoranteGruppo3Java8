@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
+
+
     private TypeEnum typeOfMenu;
     private List<Portata> listaPortate;
+
+    //TODO aggiungere altri field e metodi di stampa utilità, potete fare quello che volete
     public Menu(TypeEnum typeOfMenu) {
         this.typeOfMenu = typeOfMenu;
         this.listaPortate = new ArrayList<>();
     }
 
+    //TODO
     /**
      * Questo metodo Stampa l'intero menu' secondo l'ordine stabilito dall' EnumPortataType
      */

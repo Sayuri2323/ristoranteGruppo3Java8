@@ -7,6 +7,8 @@ package it.ristoranteGruppo3.entities;
 
 public class SecondoPiatto extends Portata {
 
+    //TODO arricchiere
+
     public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum) {
         super(namePortata, pricePortata, typeEnum);
 

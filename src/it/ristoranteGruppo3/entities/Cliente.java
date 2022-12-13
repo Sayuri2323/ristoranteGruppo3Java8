@@ -1,6 +1,8 @@
 package it.ristoranteGruppo3.entities;
 
 public class Cliente {
+
+    //TODO risistemiamo concettualmente come sono organizzate le classi facendo attenzione a chi effettivamente ha il metodo
     private String name;
     private String surname;
     private TypeEnum type;

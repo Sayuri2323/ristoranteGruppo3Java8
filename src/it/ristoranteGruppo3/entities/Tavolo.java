@@ -5,16 +5,22 @@ import java.util.List;
 
     public class Tavolo {
         private int numeroTavolo;
+
+        //TODO il conto è sul ristorante
         private double conto;//decidere se inserire qui o su Cliente
         private List<Portata> ordinazione=new ArrayList<>();//decidere se inserire qui o su Cliente
 
         private boolean eRiservato;
 
+
+        //TODO togliamo riservato ed inseriamo un enumerato con più stati: libero, occupato, riservato
         public Tavolo(int numeroTavolo, boolean eRiservato) {
             this.numeroTavolo = numeroTavolo;
             this.eRiservato = eRiservato;
         }
 
+        //TODO per stampare i dettagli non si va l'override perchè il tostring è: nomeclasse@112332ù
+        //ci da un identificativo stringato dell'oggetto, per stampare si fa un metodo void printDetailTable
         @Override
         public String toString() {
             return "Tavolo{" +
@@ -23,6 +29,8 @@ import java.util.List;
                     '}';
         }
         //il conto va bene void oppure vogliamo un return double?
+
+        //TODO spostare questa logica
         public void getConto() {
             double x=0;
             System.out.print("Il conto è di ");

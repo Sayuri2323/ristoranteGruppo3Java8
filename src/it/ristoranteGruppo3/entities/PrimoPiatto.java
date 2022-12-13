@@ -9,8 +9,6 @@ package it.ristoranteGruppo3.entities;
 public class PrimoPiatto extends Portata {
     public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum) {
         super(namePortata, pricePortata, typeEnum);
-
-
     }
 }
 

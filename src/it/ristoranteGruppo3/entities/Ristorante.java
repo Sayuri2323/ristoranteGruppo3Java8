@@ -12,11 +12,7 @@ public class Ristorante {
 
     private List<Tavolo> tavoli = new ArrayList<>();//da implementare?
 
-
-
     private List<Menu> menuRistorante=new ArrayList<>();
-
-
 
     public Ristorante(String name, String address, int capienza) {
         this.name = name;

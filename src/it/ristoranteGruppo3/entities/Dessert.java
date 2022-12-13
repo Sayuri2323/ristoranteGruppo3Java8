@@ -7,6 +7,9 @@ package it.ristoranteGruppo3.entities;
 
 public class Dessert extends Portata {
 
+     private dessert
+    //TODO aggingere personalizzazioni
+
     public Dessert(String namePortata, double pricePortata, TypeEnum typeEnum) {
         super(namePortata, pricePortata, typeEnum);
 

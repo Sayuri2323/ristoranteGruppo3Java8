@@ -2,10 +2,13 @@ package it.ristoranteGruppo3.entities;
 
 public class Portata {
 
+    //TODO inserire la descrizione e pensare come differenziare i figli
+    //mancaono i setter
    private String namePortata;
    private double pricePortata;
    private TypeEnum typePortata;
 
+   //TODO bug!
    public Portata(String namePortata, double pricePortata,TypeEnum typeEnum) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
