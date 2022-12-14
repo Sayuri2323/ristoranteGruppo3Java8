@@ -1,5 +1,7 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.portate.Portata;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.portate.Portata;
+
 public class Cliente {
 
     //TODO risistemiamo concettualmente come sono organizzate le classi facendo attenzione a chi effettivamente ha il metodo

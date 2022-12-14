@@ -1,4 +1,5 @@
 import it.ristoranteGruppo3.entities.*;
+import it.ristoranteGruppo3.entities.portate.*;
 
 public class Tester {
     public static void main(String[] args) {
@@ -16,11 +17,10 @@ public class Tester {
         ristoranteGruppo3.addMenuRistorante(menuVegetariano);
 
         //creazione del menu carne che sara quello principale
-        menuCarne.addPortata(new Antipasto("Crostini con salame felino", 8, TypeEnum.CARNE));
-        menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE));
-        menuCarne.addPortata(new Antipasto("Mousse di mortadella", 13, TypeEnum.CARNE));
-        menuCarne.addPortata(new Antipasto("Bignè salati ripieni", 8, TypeEnum.CARNE));
-        menuCarne.addPortata(new PrimoPiatto("Spaghetti alla carbonara", 18, TypeEnum.CARNE));
+        menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE,"con scamone di manzo, fava fresca e pecorino romano"));
+        menuCarne.addPortata(new Antipasto("Mousse di mortadella", 13, TypeEnum.CARNE,"Mousse di mortadella con granella di pistacchi"));
+        menuCarne.addPortata(new Antipasto("Bignè salati ripieni", 8, TypeEnum.CARNE,"pasta choux, Grana Padano DOP e farcitura di formaggio"));
+        menuCarne.addPortata(new PrimoPiatto("Spaghetti alla carbonara", 18, TypeEnum.CARNE,"con Guanciale,tuorli e pecorino romano"));
         menuCarne.addPortata(new PrimoPiatto("Pappardelle al sugo di cinghiale", 16, TypeEnum.CARNE));
         menuCarne.addPortata(new PrimoPiatto("Agnolotti con sugo di brasato", 22, TypeEnum.CARNE));
         menuCarne.addPortata(new PrimoPiatto("Ravioli alla bolognese", 16, TypeEnum.CARNE));
@@ -80,7 +80,7 @@ public class Tester {
         menuVegetariano.addPortata(new Bevanda("Pepsi", 2.50, TypeEnum.VEGETARIANO));
 
         //stampiamo tutti i menu
-        ristoranteGruppo3.printAllMenu();
+
         System.out.println("--------------------------------------------------");
         //creazione tavolo
         Tavolo t1 = new Tavolo(2, false); //va implementato un check della disponibilita del tavolo
@@ -97,6 +97,9 @@ public class Tester {
         t1.printOrdinazione();
         //stampa del conto
         t1.getConto();
+
+        menuCarne.getListaPortate().get(2).setDescrizione("blablablablablabalbalbalblabl");
+        ristoranteGruppo3.printAllMenu();
 
 
 

@@ -1,5 +1,7 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.portate.Portata;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,14 +21,11 @@ import java.util.List;
             this.eRiservato = eRiservato;
         }
 
-        //TODO per stampare i dettagli non si va l'override perchè il tostring è: nomeclasse@112332ù
-        //ci da un identificativo stringato dell'oggetto, per stampare si fa un metodo void printDetailTable
-        @Override
-        public String toString() {
-            return "Tavolo{" +
-                    "numeroTavolo=" + numeroTavolo +
-                    ", eRiservato=" + eRiservato +
-                    '}';
+        public  void printTavoloDetails() {
+            System.out.println("Tavolo numero" + " " + getNumeroTavolo());
+            if (geteRiservato()){
+                System.out.println("Tavolo riservato");
+            } else System.out.println("Tavolo libero");
         }
         //il conto va bene void oppure vogliamo un return double?
 
