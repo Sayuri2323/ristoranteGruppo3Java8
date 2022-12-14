@@ -12,20 +12,17 @@ import java.util.List;
         private double conto;//decidere se inserire qui o su Cliente
         private List<Portata> ordinazione=new ArrayList<>();//decidere se inserire qui o su Cliente
 
-        private boolean eRiservato;
+        StatoTavoloEnum statoDelTavolo;
 
 
         //TODO togliamo riservato ed inseriamo un enumerato con più stati: libero, occupato, riservato
-        public Tavolo(int numeroTavolo, boolean eRiservato) {
+        public Tavolo(int numeroTavolo, StatoTavoloEnum statoDelTavolo) {
             this.numeroTavolo = numeroTavolo;
-            this.eRiservato = eRiservato;
+            this.statoDelTavolo=statoDelTavolo;
         }
 
         public  void printTavoloDetails() {
-            System.out.println("Tavolo numero" + " " + getNumeroTavolo());
-            if (geteRiservato()){
-                System.out.println("Tavolo riservato");
-            } else System.out.println("Tavolo libero");
+            System.out.println("Il tavolo numero " +numeroTavolo+ " è "+ statoDelTavolo );
         }
         //il conto va bene void oppure vogliamo un return double?
 
@@ -53,12 +50,12 @@ import java.util.List;
         }
 
 
-        public boolean geteRiservato() {
-            return eRiservato;
+        public StatoTavoloEnum getStatoDelTavolo() {
+            return statoDelTavolo;
         }
 
-        public void seteRiservato(boolean eRiservato) {
-            this.eRiservato = eRiservato;
+        public void setStatoDelTavolo(StatoTavoloEnum statoDelTavolo ) {
+            this.statoDelTavolo = statoDelTavolo;
         }
 
         public int getNumeroTavolo() {

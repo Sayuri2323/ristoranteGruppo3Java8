@@ -78,12 +78,16 @@ public class Tester {
         menuVegetariano.addPortata(new Bevanda("Acqua gassata", 1.50, TypeEnum.VEGETARIANO));
         menuVegetariano.addPortata(new Bevanda("Vino", 99.99, TypeEnum.VEGETARIANO));
         menuVegetariano.addPortata(new Bevanda("Pepsi", 2.50, TypeEnum.VEGETARIANO));
-
+        ristoranteGruppo3.printAllMenu();
         //stampiamo tutti i menu
 
         System.out.println("--------------------------------------------------");
+
         //creazione tavolo
-        Tavolo t1 = new Tavolo(2, false); //va implementato un check della disponibilita del tavolo
+        Tavolo t1 = new Tavolo(2, StatoTavoloEnum.OCCUPATO);
+        t1.printTavoloDetails();//va implementato un check della disponibilita del tavolo
+        System.out.println("--------------------------------------------------");
+
         //creazione cliente
         Cliente c1 = new Cliente("Francesco", "Sepe", TypeEnum.CARNE);
         //assegnazione tavolo al cliente
@@ -99,7 +103,7 @@ public class Tester {
         t1.getConto();
 
         menuCarne.getListaPortate().get(2).setDescrizione("blablablablablabalbalbalblabl");
-        ristoranteGruppo3.printAllMenu();
+
 
 
 
