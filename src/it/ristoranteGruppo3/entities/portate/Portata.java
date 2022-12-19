@@ -2,7 +2,6 @@ package it.ristoranteGruppo3.entities.portate;
 
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
-import java.util.List;
 
 public class Portata {
 
