@@ -1,23 +1,22 @@
 import it.ristoranteGruppo3.entities.*;
-import it.ristoranteGruppo3.entities.enums.TypeEnum;
-import it.ristoranteGruppo3.entities.enums.TypePrimoEnum;
+import it.ristoranteGruppo3.entities.enums.*;
 import it.ristoranteGruppo3.entities.portate.*;
 
 public class Tester {
     public static void main(String[] args) {
 
         //creazione del nostro ristorante
-        Ristorante ristoranteGruppo3 = new Ristorante("Ristorante Gruppo 3", "Privet Drive n.4", 23);
+        Ristorante ristoranteGruppo3 = new Ristorante("Ristorante Gruppo 3", "Privet Drive n.4", 23,"www.google.com","333333333333");
         Menu menuCarne = new Menu(TypeEnum.CARNE);
         Menu menuPesce = new Menu(TypeEnum.PESCE);
         Menu menuVegano = new Menu(TypeEnum.VEGANO);
         Menu menuVegetariano = new Menu(TypeEnum.VEGETARIANO);
 
         //aggiungiamo i menu al ristorante
-        ristoranteGruppo3.addMenuRistorante(menuCarne);
-        ristoranteGruppo3.addMenuRistorante(menuPesce);
-        ristoranteGruppo3.addMenuRistorante(menuVegano);
-        ristoranteGruppo3.addMenuRistorante(menuVegetariano);
+        ristoranteGruppo3.setMenuRistorante(menuCarne);
+        ristoranteGruppo3.setMenuRistorante(menuPesce);
+        ristoranteGruppo3.setMenuRistorante(menuVegano);
+        ristoranteGruppo3.setMenuRistorante(menuVegetariano);
 
         //creazione del menu carne che sara quello principale
         menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE,"con scamone di manzo, fava fresca e pecorino romano"));
@@ -84,7 +83,5 @@ public class Tester {
 
         //stampiamo tutti i menu
         ristoranteGruppo3.printAllMenu();
-
-
     }
 }
