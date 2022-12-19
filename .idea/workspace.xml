@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="=spostato git ignore">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_13_12_2022_16_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_13_12_2022_16_41__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" afterDir="false" />
+    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="Inserita descrizione in portata e cambiato il metodo printTavoloDetails da String a Void">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_43_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_43__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_44_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_44__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/enums/TypePrimoEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/Antipasto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/Bevanda.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/Dessert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/Portata.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/PrimoPiatto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/SecondoPiatto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypePrimoEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/TestMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ristoranteGruppo3Java8/TestMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/Tester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Antipasto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Bevanda.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Dessert.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Portata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/PrimoPiatto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Ristorante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Ristorante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/SecondoPiatto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Tavolo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/Tavolo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/TypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/enums/TypeEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Antipasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Bevanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/PrimoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/SecondoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/TypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670345403384</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inserita descrizione in portata e cambiato il metodo printTavoloDetails da String a Void">
+      <created>1671029567126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671029567126</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,7 +124,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -124,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="=spostato git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="=spostato git ignore" />
+    <MESSAGE value="Inserita descrizione in portata e cambiato il metodo printTavoloDetails da String a Void" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserita descrizione in portata e cambiato il metodo printTavoloDetails da String a Void" />
   </component>
 </project>

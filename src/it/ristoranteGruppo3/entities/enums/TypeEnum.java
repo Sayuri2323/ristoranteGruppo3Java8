@@ -1,4 +1,4 @@
-package it.ristoranteGruppo3.entities;
+package it.ristoranteGruppo3.entities.enums;
 
 public enum TypeEnum {
 

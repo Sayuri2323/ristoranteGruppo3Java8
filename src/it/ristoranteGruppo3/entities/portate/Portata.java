@@ -1,6 +1,8 @@
 package it.ristoranteGruppo3.entities.portate;
 
-import it.ristoranteGruppo3.entities.TypeEnum;
+import it.ristoranteGruppo3.entities.enums.TypeEnum;
+
+import java.util.List;
 
 public class Portata {
 
@@ -69,13 +71,13 @@ public class Portata {
     }
 
     /**
-     * Questo metodo stampa la portata nel seguente format nomePortata prezzoConDueDecimali€
+     * Questo metodo stampa la portata
      */
-    public void printPortata(){
+    public void printPortataGenerica(){
 
-        System.out.println(namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
         if(descrizione!=null){
-            System.out.println(String.format("'%s'", getDescrizione()));
+            System.out.println(String.format("|%s|", getDescrizione()));
         }
     }
 }

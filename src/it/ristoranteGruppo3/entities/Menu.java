@@ -1,5 +1,6 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.enums.TypeEnum;
 import it.ristoranteGruppo3.entities.portate.Portata;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class Menu {
      */
     public void printMenu() {
         for (Portata portata : listaPortate){
-            portata.printPortata();
+            portata.printPortataGenerica();
         }
     }
 

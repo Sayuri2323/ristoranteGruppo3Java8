@@ -1,5 +1,6 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.enums.TypeEnum;
 import it.ristoranteGruppo3.entities.portate.Portata;
 
 public class Cliente {

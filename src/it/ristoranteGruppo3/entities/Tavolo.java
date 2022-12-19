@@ -48,7 +48,7 @@ import java.util.List;
         public void printOrdinazione(){
             System.out.println("Ordinazione del tavolo " + this.numeroTavolo);
             for (Portata p:this.ordinazione) {
-                p.printPortata();
+                p.printPortataGenerica();
             }
         }
 
