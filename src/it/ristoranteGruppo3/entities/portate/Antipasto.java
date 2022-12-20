@@ -45,6 +45,7 @@ public class Antipasto extends Portata {
 
     /**
      * Questo metodo stampa tutti i campi dell'antipasto
+     * TODO ciclare su punto values dell'enumerato e modificare il metodo
      */
     public void printAntipasto(){
         super.printPortataGenerica();

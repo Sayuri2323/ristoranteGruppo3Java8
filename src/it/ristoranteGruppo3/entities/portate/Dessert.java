@@ -71,7 +71,7 @@ public class Dessert extends Portata {
 
     /**
      * Questo metodo stampa tutti i campi del dessert
-     *
+     *TODO inserire @Override in tutte classi figlie
      */
     public void printDessert(){
         super.printPortataGenerica();
