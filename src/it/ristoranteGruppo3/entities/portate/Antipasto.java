@@ -49,7 +49,29 @@ public class Antipasto extends Portata {
     public void printAntipasto(){
         super.printPortataGenerica();
         if (getTipoCottura()!=null){
-            System.out.print(" e' un Antipasto con tipologia di cottura"+" "+ tipoCottura.name().toLowerCase());
+            switch (getTipoCottura()){
+                case FRITTO:
+                    System.out.println("è un antipasto fritto");
+                    break;
+                case FORNO:
+                    System.out.println("è un antipasto al forno");
+                    break;
+                case VAPORE:
+                    System.out.println("è un antipasto al vapore");
+                    break;
+                case CRUDO:
+                    System.out.println("è un antipasto crudo");
+                    break;
+                case COTTO:
+                    System.out.println("è un antipasto cotto");
+                    break;
+                case BOLLITO:
+                    System.out.println("è un antipasto bollito");
+                    break;
+                default:
+                    System.out.println("Errore nel campo cottura");
+                    break;
+            }
             System.out.println("\n");
         }
     }

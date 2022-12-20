@@ -101,6 +101,15 @@ public class Menu {
             }
         }
     }
+    public void printSecondi(){
+        System.out.println("Stampa dei secondi del menu " + getTypeOfMenu().name().toLowerCase());
+        System.out.println("\n");
+        for (Portata portataGenerica: getListaPortate()) {
+            if (portataGenerica instanceof SecondoPiatto){
+                ((SecondoPiatto) portataGenerica).printSecondoPiatto();
+            }
+        }
+    }
 
 }
 

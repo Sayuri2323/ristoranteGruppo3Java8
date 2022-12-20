@@ -28,7 +28,7 @@ public class Tester {
         menuCarne.addPortata(new PrimoPiatto("Tagliatelle al ragù di cervo", 22, TypeEnum.CARNE,TypePrimoEnum.PASTA));
         menuCarne.addPortata(new PrimoPiatto("Maltagliati al petto d'anatra", 25, TypeEnum.CARNE,TypePrimoEnum.PASTA));
         menuCarne.addPortata(new PrimoPiatto("Risotto zafferano e salsiccia", 18, TypeEnum.CARNE,TypePrimoEnum.PASTA));
-        menuCarne.addPortata(new SecondoPiatto("Scaloppine al limone", 20, TypeEnum.CARNE));
+        menuCarne.addPortata(new SecondoPiatto("Scaloppine al limone", 20, TypeEnum.CARNE,TypeCotturaEnum.BOLLITO));
         menuCarne.addPortata(new SecondoPiatto("Peperoni ripieni di carne e salsiccia", 18.50, TypeEnum.CARNE));
         menuCarne.addPortata(new SecondoPiatto("Arrosto di vitello al forno con patate", 25, TypeEnum.CARNE));
         menuCarne.addPortata(new SecondoPiatto("Spezzatino di maiale", 12.00, TypeEnum.CARNE));
@@ -79,7 +79,7 @@ public class Tester {
         menuVegetariano.addPortata(new Bevanda("Acqua gassata", 1.50, TypeEnum.VEGETARIANO));
         menuVegetariano.addPortata(new Bevanda("Vino", 99.99, TypeEnum.VEGETARIANO));
         menuVegetariano.addPortata(new Bevanda("Pepsi", 2.50, TypeEnum.VEGETARIANO));
-
+        menuCarne.printSecondi();
         System.out.println("--------------------------------------------------");
     }
 }
