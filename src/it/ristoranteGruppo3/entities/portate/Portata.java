@@ -6,11 +6,11 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
 public class Portata {
 
     //TODO inserire la descrizione e pensare come differenziare i figli
-   private String namePortata;
-   private double pricePortata;
-   private TypeEnum typePortata;
+    private String namePortata;
+    private double pricePortata;
+    private TypeEnum typePortata;
 
-   private String descrizione;
+    private String descrizione;
 
     /**
      * costruttore All args
@@ -19,13 +19,12 @@ public class Portata {
      * @param typeEnum tipo della portata
      * @param descrizione descrizione della portata
      */
-   public Portata(String namePortata, double pricePortata,TypeEnum typeEnum,String descrizione) {
+    public Portata(String namePortata, double pricePortata,TypeEnum typeEnum,String descrizione) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typeEnum;
         this.descrizione = descrizione;
-
-   }
+    }
 
     /**
      * Costruttore per tutte le portate che non necessitano di una descrizione
