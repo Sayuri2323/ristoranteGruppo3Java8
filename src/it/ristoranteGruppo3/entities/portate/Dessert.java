@@ -1,6 +1,6 @@
 package it.ristoranteGruppo3.entities.portate;
 
-import it.ristoranteGruppo3.entities.enums.TipiCotturaEnum;
+import it.ristoranteGruppo3.entities.enums.TypeCotturaEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 /**
@@ -9,11 +9,18 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
  */
 
 public class Dessert extends Portata {
-private boolean alcolico;
-private boolean artigianale;
-    TipiCotturaEnum tipoCottura;
-    //TODO aggingere personalizzazioni
-
+    /**
+     * Valore booleano che indica se il dessert contiene alcohol
+     */
+    private boolean alcolico;
+    /**
+     * Valore booleano che indica se il dissert è artigianale
+     */
+    private boolean artigianale;
+    /**
+     * Tipologia di cottura del dessert
+     */
+    private TypeCotturaEnum tipoCottura;
 
     public boolean isAlcolico() {
         return alcolico;
@@ -31,11 +38,11 @@ private boolean artigianale;
         this.artigianale = artigianale;
     }
 
-    public TipiCotturaEnum getTipoCottura() {
+    public TypeCotturaEnum getTipoCottura() {
         return tipoCottura;
     }
 
-    public void setTipoCottura(TipiCotturaEnum tipoCottura) {
+    public void setTipoCottura(TypeCotturaEnum tipoCottura) {
         this.tipoCottura = tipoCottura;
     }
 
@@ -47,7 +54,7 @@ private boolean artigianale;
      * @param descrizione descrizione della portata
      * @param tipoCottura tipo della cottura
      */
-    public Dessert(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione, TipiCotturaEnum tipoCottura) {
+    public Dessert(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione, TypeCotturaEnum tipoCottura) {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.tipoCottura=tipoCottura;
     }
@@ -63,11 +70,15 @@ private boolean artigianale;
     }
 
     /**
-     * Creato metodo di stampa solo Dessert
-     * @param dessert
+     * Questo metodo stampa tutti i campi del dessert
+     *
      */
-    public void printDessert(Dessert dessert){
-        System.out.println(dessert.getNamePortata()+" E' un prodotto artigianale? "+ artigianale +". E' alcolico? "+ alcolico +". Qual è il tipo di cottura? "+tipoCottura);
+    public void printDessert(){
+        super.printPortataGenerica();
+        if (getTipoCottura()!= null){
+            System.out.print(" e' un dessert con tipologia di cottura"+" "+ tipoCottura.name().toLowerCase());
+            System.out.print(" " + "contiene alcohol? " + isAlcolico() + " " + "e' artigianale? " + isArtigianale());
+            System.out.println("\n");
+        }
     }
-
 }

@@ -1,8 +1,5 @@
 package it.ristoranteGruppo3.entities.portate;
-
-
-import it.ristoranteGruppo3.entities.enums.TipiCotturaEnum;
-import it.ristoranteGruppo3.entities.enums.TypeEnum;
+import it.ristoranteGruppo3.entities.enums.*;
 
 /**
  * Questa classe rappresenta gli antipasti del nostro menu'.
@@ -12,7 +9,7 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 public class Antipasto extends Portata {
 
-    TipiCotturaEnum tipoCottura;
+    private TypeCotturaEnum tipoCottura;
 
 
     /**
@@ -23,7 +20,7 @@ public class Antipasto extends Portata {
      * @param descrizione descrizione della portata
      * @param tipoCottura tipo della cottura
      */
-    public Antipasto(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione,TipiCotturaEnum tipoCottura) {
+    public Antipasto(String namePortata, double pricePortata, TypeEnum typeEnum, String descrizione, TypeCotturaEnum tipoCottura) {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.tipoCottura=tipoCottura;
     }
@@ -36,6 +33,25 @@ public class Antipasto extends Portata {
      */
     public Antipasto(String namePortata, double pricePortata, TypeEnum typeEnum) {
         super(namePortata, pricePortata, typeEnum);
+    }
+
+    public TypeCotturaEnum getTipoCottura() {
+        return tipoCottura;
+    }
+
+    public void setTipoCottura(TypeCotturaEnum tipoCottura) {
+        this.tipoCottura = tipoCottura;
+    }
+
+    /**
+     * Questo metodo stampa tutti i campi dell'antipasto
+     */
+    public void printAntipasto(){
+        super.printPortataGenerica();
+        if (getTipoCottura()!=null){
+            System.out.print(" e' un Antipasto con tipologia di cottura"+" "+ tipoCottura.name().toLowerCase());
+            System.out.println("\n");
+        }
     }
 
 }

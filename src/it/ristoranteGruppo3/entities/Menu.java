@@ -55,12 +55,52 @@ public class Menu {
      * Questo metodo stampa tutti i primi piatti presenti all' interno del menu
      */
     public void printPrimiPiatti(){
-        System.out.println("Stampa dei primi piatti del menu + " + getTypeOfMenu());
+        System.out.println("Stampa dei primi piatti del menu  " + getTypeOfMenu().name().toLowerCase());
+        System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
             if (portataGenerica instanceof PrimoPiatto){
                 ((PrimoPiatto) portataGenerica).printPrimoPiatto();
             }
         }
     }
+    /**
+     * Questo metodo stampa tutti gli Antipasti presenti all' interno del menu
+     */
+    public void printAntipasti(){
+        System.out.println("Stampa degli antipasti del menu " + getTypeOfMenu().name().toLowerCase());
+        System.out.println("\n");
+        for (Portata portataGenerica: getListaPortate()) {
+            if (portataGenerica instanceof Antipasto){
+                ((Antipasto) portataGenerica).printAntipasto();
+            }
+        }
+    }
+
+    /**
+     * Questo metodo stampa tutti i Dessert presenti all' interno del menu
+     */
+    public void printDessert(){
+        System.out.println("Stampa dei Dessert del menu " + getTypeOfMenu().name().toLowerCase());
+        System.out.println("\n");
+        for (Portata portataGenerica: getListaPortate()) {
+            if (portataGenerica instanceof Dessert){
+                ((Dessert) portataGenerica).printDessert();
+            }
+        }
+    }
+
+    /**
+     * Questo metodo stampa tutte le bevande presenti all' interno del menu
+     */
+    public void printBevanda(){
+        System.out.println("Stampa delle Bevande del menu " + getTypeOfMenu().name().toLowerCase());
+        System.out.println("\n");
+        for (Portata portataGenerica: getListaPortate()) {
+            if (portataGenerica instanceof Bevanda){
+                ((Bevanda) portataGenerica).printBevanda();
+            }
+        }
+    }
+
 }
 

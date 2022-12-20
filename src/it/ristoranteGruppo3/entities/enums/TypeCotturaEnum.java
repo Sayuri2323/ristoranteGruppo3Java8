@@ -1,6 +1,6 @@
 package it.ristoranteGruppo3.entities.enums;
 
-public enum TipiCotturaEnum {
+public enum TypeCotturaEnum {
     FRITTO,
     FORNO,
     VAPORE,
@@ -8,5 +8,4 @@ public enum TipiCotturaEnum {
     COTTO,
     BOLLITO,
     SEMIFREDDO,
-
 }

@@ -4,8 +4,6 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 
 public class Portata {
-
-    //TODO inserire la descrizione e pensare come differenziare i figli
     private String namePortata;
     private double pricePortata;
     private TypeEnum typePortata;
@@ -73,7 +71,6 @@ public class Portata {
      * Questo metodo stampa la portata
      */
     public void printPortataGenerica(){
-
         System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
         if(descrizione!=null){
             System.out.println(String.format("|%s|", getDescrizione()));

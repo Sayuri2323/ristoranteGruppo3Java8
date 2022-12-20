@@ -4,7 +4,7 @@ import it.ristoranteGruppo3.entities.enums.StatoTavoloEnum;
 
 public class Tavolo {
         private int numeroTavolo;
-        StatoTavoloEnum statoDelTavolo;
+        private StatoTavoloEnum statoDelTavolo;
 
 
         //TODO togliamo riservato ed inseriamo un enumerato con più stati: libero, occupato, riservato

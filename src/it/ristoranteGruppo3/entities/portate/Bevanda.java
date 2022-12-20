@@ -1,6 +1,4 @@
 package it.ristoranteGruppo3.entities.portate;
-
-
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 /**
@@ -9,7 +7,7 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
  */
 
 public class Bevanda extends Portata {
-    private boolean hasAlcohol;
+    private boolean alcohol;
     /**
      * costruttore All args
      * @param namePortata Nome della portata
@@ -18,9 +16,9 @@ public class Bevanda extends Portata {
      * @param descrizione descrizione della portata
      */
 
-    public Bevanda(String namePortata, double pricePortata, TypeEnum typeEnum,boolean hasAlcohol,String descrizione) {
+    public Bevanda(String namePortata, double pricePortata, TypeEnum typeEnum, boolean alcohol, String descrizione) {
         super(namePortata, pricePortata, typeEnum,descrizione);
-        this.hasAlcohol = hasAlcohol;
+        this.alcohol = alcohol;
     }
 
     /**
@@ -31,6 +29,28 @@ public class Bevanda extends Portata {
      */
     public Bevanda(String namePortata, double pricePortata, TypeEnum typeEnum) {
         super(namePortata, pricePortata, typeEnum);
-        hasAlcohol = false;
+        alcohol = false;
+    }
+
+    public boolean isAlcohol() {
+        return alcohol;
+    }
+
+    public void setAlcohol(boolean alcohol) {
+        this.alcohol = alcohol;
+    }
+
+    /**
+     * Questo metodo stampa tutti i campi della bevanda
+     */
+    public void printBevanda(){
+        super.printPortataGenerica();
+        if (isAlcohol()){
+            System.out.print(" " + "questa bevanda contiene alcohol");
+
+        } else {
+            System.out.print(" " + "questa bevanda non contiene alcohol");
+        }
+        System.out.println("\n");
     }
 }

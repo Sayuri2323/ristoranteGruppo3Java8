@@ -9,7 +9,6 @@ import it.ristoranteGruppo3.entities.enums.*;
  */
 
 public class PrimoPiatto extends Portata {
-
     private TypePrimoEnum tipologiaPrimo;
 
     /**
@@ -61,7 +60,8 @@ public class PrimoPiatto extends Portata {
     public void printPrimoPiatto(){
         this.printPortataGenerica();
         if (getTipologiaPrimo()!=null){
-            System.out.println("e' un primo piatto a base di"+" "+ tipologiaPrimo.name().toLowerCase());
+            System.out.print(" e' un primo piatto a base di"+" "+ tipologiaPrimo.name().toLowerCase());
+            System.out.println("\n");
         }
     }
 }
