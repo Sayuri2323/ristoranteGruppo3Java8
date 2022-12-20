@@ -100,19 +100,25 @@ public class Ristorante {
         return clienti;
     }
 
-    public void setClienti(Cliente cliente) {
+    /**
+     * Questo metodo ci permette di inserire un nuovo cliente nella lista di clienti attualmente presenti nel ristorante
+     * il cliente verra' aggiunto solo se il valore currentNumberOfClients non avra' superato maxCapacity del ristorante
+     * @param cliente il cliente da aggiungere
+     */
+    public void setCliente(Cliente cliente) {
         if (currentNumberOfClients < maxCapacity) {
             getClienti().add(cliente);
             currentNumberOfClients++;
         } else System.out.println("Il ristorante è pieno, la preghiamo di attendere");
     }
 
+
     public List<Tavolo> getTavoli() {
         return tavoli;
     }
 
-    public void setTavoli(List<Tavolo> tavoli) {
-        this.tavoli = tavoli;
+    public void setTavolo(Tavolo tavolo) {
+       getTavoli().add(tavolo);
     }
 
     public String getWebSite() {
@@ -152,20 +158,19 @@ public class Ristorante {
             throw new IllegalArgumentException("Il cliente non è valido");
         }
     }
-
     /**
      * Questo metodo elimina il cliente dalla lista dei clienti presenti nel ristorante solo se ha pagato il conto
      * @param cliente il cliente da eliminare
      * @throws IllegalArgumentException
      */
     public void removeCliente(Cliente cliente) throws IllegalArgumentException {
-        if (getClienti().contains(cliente)) {
-            if (cliente.isBillPayed()) {
-                getClienti().remove(cliente);
-                currentNumberOfClients--;
-            } else System.out.println("Il cliente non ha ancora pagato il conto");
-        } else {
-            throw new IllegalArgumentException("Il cliente non è presente nel ristorante");
-        }
+            if (getClienti().contains(cliente)) {
+                if (cliente.isBillPayed()) {
+                    getClienti().remove(cliente);
+                    currentNumberOfClients--;
+                } else System.out.println("Il cliente non ha ancora pagato il conto");
+            } else {
+                throw new IllegalArgumentException("Il cliente non è presente nel ristorante");
+            }
     }
 }

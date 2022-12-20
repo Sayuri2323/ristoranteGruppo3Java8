@@ -1,6 +1,5 @@
 package it.ristoranteGruppo3.entities.portate;
-
-import it.ristoranteGruppo3.entities.TypeEnum;
+import it.ristoranteGruppo3.entities.enums.*;
 
 /**
  * Questa classe rappresenta i primi piatti del nostro menu'.
@@ -17,7 +16,7 @@ public class PrimoPiatto extends Portata {
      * @param typeEnum tipo della portata
      * @param descrizione descrizione della portata
      */
-    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione ) {
+    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum, String descrizione ) {
         super(namePortata, pricePortata, typeEnum,descrizione);
 
     }

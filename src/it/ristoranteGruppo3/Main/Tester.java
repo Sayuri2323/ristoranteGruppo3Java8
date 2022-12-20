@@ -1,23 +1,24 @@
 import it.ristoranteGruppo3.entities.*;
+import it.ristoranteGruppo3.entities.enums.*;
 import it.ristoranteGruppo3.entities.portate.*;
 
 public class Tester {
     public static void main(String[] args) {
         //creazione del nostro ristorante
-        Ristorante ristoranteGruppo3 = new Ristorante("Ristorante Gruppo 3", "Privet Drive n.4", 23);
+        Ristorante ristoranteGruppo3 = new Ristorante("Ristorante Gruppo 3", "Privet Drive n.4", 23,"www.google.com","333333333333");
         Menu menuCarne = new Menu(TypeEnum.CARNE);
         Menu menuPesce = new Menu(TypeEnum.PESCE);
         Menu menuVegano = new Menu(TypeEnum.VEGANO);
         Menu menuVegetariano = new Menu(TypeEnum.VEGETARIANO);
 
         //aggiungiamo i menu al ristorante
-        ristoranteGruppo3.addMenuRistorante(menuCarne);
-        ristoranteGruppo3.addMenuRistorante(menuPesce);
-        ristoranteGruppo3.addMenuRistorante(menuVegano);
-        ristoranteGruppo3.addMenuRistorante(menuVegetariano);
+        ristoranteGruppo3.setMenuRistorante(menuCarne);
+        ristoranteGruppo3.setMenuRistorante(menuPesce);
+        ristoranteGruppo3.setMenuRistorante(menuVegano);
+        ristoranteGruppo3.setMenuRistorante(menuVegetariano);
 
         //creazione del menu carne che sara quello principale
-        menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE,"con scamone di manzo, fava fresca e pecorino romano",TipiCotturaEnum.CRUDO));
+        menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE,"con scamone di manzo, fava fresca e pecorino romano", TipiCotturaEnum.CRUDO));
         menuCarne.addPortata(new Antipasto("Mousse di mortadella", 13, TypeEnum.CARNE,"Mousse di mortadella con granella di pistacchi",TipiCotturaEnum.COTTO));
         menuCarne.addPortata(new Antipasto("Bignè salati ripieni", 8, TypeEnum.CARNE,"pasta choux, Grana Padano DOP e farcitura di formaggio",TipiCotturaEnum.FORNO));
         menuCarne.addPortata(new PrimoPiatto("Spaghetti alla carbonara", 18, TypeEnum.CARNE,"con Guanciale,tuorli e pecorino romano"));
@@ -83,33 +84,5 @@ public class Tester {
         //stampiamo tutti i menu
 
         System.out.println("--------------------------------------------------");
-
-        //creazione tavolo
-        Tavolo t1 = new Tavolo(2, StatoTavoloEnum.OCCUPATO);
-        t1.printTavoloDetails();//va implementato un check della disponibilita del tavolo
-        System.out.println("--------------------------------------------------");
-
-        //creazione cliente
-        Cliente c1 = new Cliente("Francesco", "Sepe", TypeEnum.CARNE);
-        //assegnazione tavolo al cliente
-        c1.setTavolo(t1);
-        //creazione di un ordinazione
-        c1.getOrdinazione(menuCarne.getListaPortate().get(4));
-        c1.getOrdinazione(menuCarne.getListaPortate().get(1));
-        c1.getOrdinazione(menuCarne.getListaPortate().get(6));
-        c1.getOrdinazione(menuCarne.getListaPortate().get(10));
-        //stampa dell'ordinazione
-        t1.printOrdinazione();
-        //stampa del conto
-        t1.getConto();
-
-        menuCarne.getListaPortate().get(2).setDescrizione("blablablablablabalbalbalblabl");
-
-
-
-
-
-
-
     }
 }

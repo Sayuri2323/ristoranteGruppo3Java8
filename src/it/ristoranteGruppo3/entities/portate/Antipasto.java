@@ -1,6 +1,7 @@
 package it.ristoranteGruppo3.entities.portate;
 
 
+import it.ristoranteGruppo3.entities.enums.TipiCotturaEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 /**

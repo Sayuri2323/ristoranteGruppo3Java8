@@ -1,4 +1,4 @@
-package it.ristoranteGruppo3.entities.portate;
+package it.ristoranteGruppo3.entities.enums;
 
 public enum TipiCotturaEnum {
     FRITTO,

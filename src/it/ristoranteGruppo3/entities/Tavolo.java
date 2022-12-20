@@ -1,5 +1,8 @@
 package it.ristoranteGruppo3.entities;
-    public class Tavolo {
+
+import it.ristoranteGruppo3.entities.enums.StatoTavoloEnum;
+
+public class Tavolo {
         private int numeroTavolo;
         StatoTavoloEnum statoDelTavolo;
 
