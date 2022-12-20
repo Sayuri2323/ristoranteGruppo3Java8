@@ -21,6 +21,7 @@ public class SecondoPiatto extends Portata {
      */
     public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione) {
         super(namePortata, pricePortata, typeEnum,descrizione);
+
     }
     /**
      * Costruttore per tutte le portate che non necessitano di una descrizione
