@@ -42,7 +42,10 @@ public class Bevanda extends Portata {
 
     /**
      * Questo metodo stampa tutti i campi della bevanda
+     *
+     * TODO refattorizzare con portata generica
      */
+
     public void printBevanda(){
         super.printPortataGenerica();
         if (isAlcohol()){
