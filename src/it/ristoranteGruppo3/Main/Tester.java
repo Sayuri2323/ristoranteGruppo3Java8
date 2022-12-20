@@ -17,9 +17,9 @@ public class Tester {
         ristoranteGruppo3.addMenuRistorante(menuVegetariano);
 
         //creazione del menu carne che sara quello principale
-        menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE,"con scamone di manzo, fava fresca e pecorino romano"));
-        menuCarne.addPortata(new Antipasto("Mousse di mortadella", 13, TypeEnum.CARNE,"Mousse di mortadella con granella di pistacchi"));
-        menuCarne.addPortata(new Antipasto("Bignè salati ripieni", 8, TypeEnum.CARNE,"pasta choux, Grana Padano DOP e farcitura di formaggio"));
+        menuCarne.addPortata(new Antipasto("Tartare di manzo gourmet", 25, TypeEnum.CARNE,"con scamone di manzo, fava fresca e pecorino romano",TipiCotturaEnum.CRUDO));
+        menuCarne.addPortata(new Antipasto("Mousse di mortadella", 13, TypeEnum.CARNE,"Mousse di mortadella con granella di pistacchi",TipiCotturaEnum.COTTO));
+        menuCarne.addPortata(new Antipasto("Bignè salati ripieni", 8, TypeEnum.CARNE,"pasta choux, Grana Padano DOP e farcitura di formaggio",TipiCotturaEnum.FORNO));
         menuCarne.addPortata(new PrimoPiatto("Spaghetti alla carbonara", 18, TypeEnum.CARNE,"con Guanciale,tuorli e pecorino romano"));
         menuCarne.addPortata(new PrimoPiatto("Pappardelle al sugo di cinghiale", 16, TypeEnum.CARNE));
         menuCarne.addPortata(new PrimoPiatto("Agnolotti con sugo di brasato", 22, TypeEnum.CARNE));
@@ -38,8 +38,8 @@ public class Tester {
         menuCarne.addPortata(new Bevanda("Acqua gassata", 1.50, TypeEnum.CARNE));
         menuCarne.addPortata(new Bevanda("Vino", 99.99, TypeEnum.CARNE));
         menuCarne.addPortata(new Bevanda("Pepsi", 2.50, TypeEnum.CARNE));
-        menuCarne.addPortata(new Dessert("Zuppa inglese", 10, TypeEnum.CARNE));
-        menuCarne.addPortata(new Dessert("Tiramisu", 7, TypeEnum.CARNE));
+        menuCarne.addPortata(new Dessert("Zuppa inglese", 10, TypeEnum.CARNE,"Servita subito",TipiCotturaEnum.BOLLITO));
+        menuCarne.addPortata(new Dessert("Tiramisu", 7, TypeEnum.CARNE, "Con caffè e savoiardi", TipiCotturaEnum.SEMIFREDDO));
         menuCarne.addPortata(new Dessert("torta di mandorle", 15, TypeEnum.CARNE));
         menuCarne.addPortata(new Dessert("Crostata di marmellata", 20, TypeEnum.CARNE));
 
@@ -79,6 +79,7 @@ public class Tester {
         menuVegetariano.addPortata(new Bevanda("Vino", 99.99, TypeEnum.VEGETARIANO));
         menuVegetariano.addPortata(new Bevanda("Pepsi", 2.50, TypeEnum.VEGETARIANO));
         ristoranteGruppo3.printAllMenu();
+
         //stampiamo tutti i menu
 
         System.out.println("--------------------------------------------------");

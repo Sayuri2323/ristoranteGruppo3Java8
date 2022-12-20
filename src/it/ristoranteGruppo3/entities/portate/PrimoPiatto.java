@@ -9,6 +9,7 @@ import it.ristoranteGruppo3.entities.TypeEnum;
  */
 
 public class PrimoPiatto extends Portata {
+
     /**
      * costruttore All args
      * @param namePortata Nome della portata
@@ -16,8 +17,9 @@ public class PrimoPiatto extends Portata {
      * @param typeEnum tipo della portata
      * @param descrizione descrizione della portata
      */
-    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione) {
+    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione ) {
         super(namePortata, pricePortata, typeEnum,descrizione);
+
     }
 
     /**

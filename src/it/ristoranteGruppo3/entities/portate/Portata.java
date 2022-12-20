@@ -23,6 +23,7 @@ public class Portata {
         this.pricePortata = pricePortata;
         this.typePortata = typeEnum;
         this.descrizione = descrizione;
+
    }
 
     /**
