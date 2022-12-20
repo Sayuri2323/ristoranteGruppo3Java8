@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-
-
     private TypeEnum typeOfMenu;
     private List<Portata> listaPortate;
 
@@ -23,7 +21,7 @@ public class Menu {
      */
     public void printMenu() {
         for (Portata portata : listaPortate){
-            portata.printPortata();
+            portata.printPortataGenerica();
         }
     }
 
