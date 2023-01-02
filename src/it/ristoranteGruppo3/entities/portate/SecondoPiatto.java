@@ -22,26 +22,6 @@ public class SecondoPiatto extends Portata {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.typeCotturaEnum = typeCotturaEnum;
     }
-    /**
-     * Costruttore per tutte le portate che necessitano di un tipo di cottura
-     * @param namePortata Nome della portata
-     * @param pricePortata prezzo della portata
-     * @param typeEnum tipo della portata
-     * @param typeCotturaEnum tipo di cottura del secondo
-     */
-    public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum, TypeCotturaEnum typeCotturaEnum) {
-        super(namePortata, pricePortata, typeEnum);
-        this.typeCotturaEnum = typeCotturaEnum;
-    }
-    /**
-     * Costruttore per tutte le portate che non necessitano di una descrizione
-     * @param namePortata Nome della portata
-     * @param pricePortata prezzo della portata
-     * @param typeEnum tipo della portata
-     */
-    public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum) {
-        super(namePortata, pricePortata, typeEnum);
-    }
 
     public TypeCotturaEnum getTypeCotturaEnum() {
         return typeCotturaEnum;

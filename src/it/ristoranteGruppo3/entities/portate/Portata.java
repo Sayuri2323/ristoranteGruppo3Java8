@@ -24,17 +24,6 @@ public class Portata {
         this.descrizione = descrizione;
     }
 
-    /**
-     * Costruttore per tutte le portate che non necessitano di una descrizione
-     * @param namePortata Nome della portata
-     * @param pricePortata prezzo della portata
-     * @param typeEnum tipo della portata
-     */
-    public Portata(String namePortata, double pricePortata,TypeEnum typeEnum) {
-        this.namePortata = namePortata;
-        this.pricePortata = pricePortata;
-        this.typePortata = typeEnum;
-    }
     public String getNamePortata() {
         return namePortata;
     }

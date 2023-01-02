@@ -21,17 +21,6 @@ public class Bevanda extends Portata {
         this.alcohol = alcohol;
     }
 
-    /**
-     * Costruttore per tutte le bevande senza descrizione o contenuto alcolico
-     * @param namePortata Nome della portata
-     * @param pricePortata prezzo della portata
-     * @param typeEnum tipo della portata
-     */
-    public Bevanda(String namePortata, double pricePortata, TypeEnum typeEnum) {
-        super(namePortata, pricePortata, typeEnum);
-        alcohol = false;
-    }
-
     public boolean isAlcohol() {
         return alcohol;
     }

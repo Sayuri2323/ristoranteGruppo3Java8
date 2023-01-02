@@ -24,18 +24,6 @@ public class PrimoPiatto extends Portata {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.tipologiaPrimo = tipologiaPrimo;
     }
-    /**
-     * Costruttore per tutte le portate che non necessitano di una descrizione
-     * @param namePortata Nome della portata
-     * @param pricePortata prezzo della portata
-     * @param typeEnum tipo della portata
-     * @param tipologiaPrimo tipologia di primo->  da utilizzare l'enum TypePrimoEnum
-     * possibili valori MINESTRA,PASTA,RISO,ALTRO
-     */
-    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,TypePrimoEnum tipologiaPrimo) {
-        super(namePortata, pricePortata, typeEnum);
-        this.tipologiaPrimo = tipologiaPrimo;
-    }
 
     /**
      * Metodo get che restituisce il valore di tipologiaPrimo

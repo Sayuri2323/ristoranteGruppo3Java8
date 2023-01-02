@@ -54,19 +54,9 @@ public class Dessert extends Portata {
      * @param descrizione descrizione della portata
      * @param tipoCottura tipo della cottura
      */
-    public Dessert(String namePortata, double pricePortata, TypeEnum typeEnum,String descrizione, TypeCotturaEnum tipoCottura) {
+    public Dessert(String namePortata, double pricePortata, TypeEnum typeEnum,TypeCotturaEnum tipoCottura, String descrizione) {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.tipoCottura=tipoCottura;
-    }
-
-    /**
-     * Costruttore per tutte le portate che non necessitano di una descrizione
-     * @param namePortata Nome della portata
-     * @param pricePortata prezzo della portata
-     * @param typeEnum tipo della portata
-     */
-    public Dessert(String namePortata, double pricePortata, TypeEnum typeEnum) {
-        super(namePortata, pricePortata, typeEnum);
     }
 
     /**
