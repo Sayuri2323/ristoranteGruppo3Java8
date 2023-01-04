@@ -1,5 +1,7 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.portate.Portata;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -151,9 +153,13 @@ public class Ristorante {
      * @param cliente Il cliente al quale bisogna calcolare il conto
      * @throws IllegalArgumentException in caso venga passato un cliente non valido
      */
-    public void calculateBillCliente(Cliente cliente) throws IllegalArgumentException {
+    public void calculateBillCliente(Cliente cliente,Menu menuFisso) throws IllegalArgumentException {
         if (getClienti().contains(cliente)) {
-            cliente.setbill(0);
+            double bill = 0;
+            for (Portata portata : menuFisso.getListaPortate() ) {
+                bill = bill + portata.getPricePortata();
+            }
+            System.out.println("Il conto del cliente e' di" + " "  + String.format("%.2f",bill) + "€");
         } else {
             throw new IllegalArgumentException("Il cliente non è valido");
         }

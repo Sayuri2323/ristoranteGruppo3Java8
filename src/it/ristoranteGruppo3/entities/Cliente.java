@@ -1,6 +1,10 @@
 package it.ristoranteGruppo3.entities;
 
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
+import it.ristoranteGruppo3.entities.portate.Portata;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Questa classe rappresenta un cliente che frequentera' un determinato ristorante
@@ -18,10 +22,7 @@ public class Cliente {
      * Tipologia Menu preferita dal Cliente
      */
     private TypeEnum type;
-    /**
-     * Conto del cliente
-     */
-    private double bill;
+
     /**
      * Valore booleano che tiene traccia dei clienti che abbiano una prenotazione
      */
@@ -43,14 +44,6 @@ public class Cliente {
         this.surname = surname;
         this.type = type;
         this.billPayed = false;
-    }
-    public double getbill() {
-        return bill;
-    }
-
-    //TODO quando verra' introdotta l'ordinazione, il set prendera' come valore in entrata una lista di portate e calcolera' automaticamente il conto
-    public void setbill(double bill) {
-        this.bill = bill;
     }
 
     public String getName() {
@@ -100,9 +93,9 @@ public class Cliente {
         System.out.println(getSurname() + " " + getName() + " " + "Tipologia" + " " + getType());
     }
     public void payBill(){
-        System.out.print("Il cliente");
+        System.out.print("Il cliente" + " ");
         this.printCliente();
-        System.out.println(" " + "sta pagando il conto per un totale di " + getbill());
+        System.out.print(" "+"Sta pagando il conto");
         setBillPayed(true);
     }
 }
