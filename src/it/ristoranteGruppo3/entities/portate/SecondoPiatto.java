@@ -31,7 +31,7 @@ public class SecondoPiatto extends Portata {
         this.typeCotturaEnum = typeCotturaEnum;
     }
     public void printSecondoPiatto(){
-        this.printPortataGenerica();
+        this.printPortata();
         if (getTypeCotturaEnum()!=null){
             switch (typeCotturaEnum){
                 case FRITTO:

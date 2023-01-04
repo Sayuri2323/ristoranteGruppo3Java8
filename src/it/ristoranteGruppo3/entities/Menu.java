@@ -47,7 +47,7 @@ public class Menu {
      */
     public void printMenu() {
         for (Portata portata : listaPortate){
-            portata.printPortataGenerica();
+            portata.printPortata();
         }
     }
 
@@ -59,7 +59,7 @@ public class Menu {
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
             if (portataGenerica instanceof PrimoPiatto){
-                ((PrimoPiatto) portataGenerica).printPrimoPiatto();
+                ((PrimoPiatto) portataGenerica).printPortata();
             }
         }
     }

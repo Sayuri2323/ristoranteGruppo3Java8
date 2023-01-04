@@ -39,7 +39,7 @@ public class Antipasto extends Portata {
      * TODO ciclare su punto values dell'enumerato e modificare il metodo
      */
     public void printAntipasto(){
-        super.printPortataGenerica();
+        super.printPortata();
         if (getTipoCottura()!=null){
             switch (getTipoCottura()){
                 case FRITTO:

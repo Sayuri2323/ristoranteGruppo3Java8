@@ -25,6 +25,17 @@ public class PrimoPiatto extends Portata {
         this.tipologiaPrimo = tipologiaPrimo;
     }
 
+
+    /**
+     * Questo metodo ci permette di stampare tutti i parametri di un primo piatto
+     */
+    @Override
+    public void printPortata(){
+        System.out.println("-" + getNamePortata() + " " + String.format("%.2f",getPricePortata()) + "€");
+        System.out.print(String.format("%s", getDescrizione()));
+        System.out.println(" " + getTipologiaPrimo().getTipoPrimo());
+    }
+
     /**
      * Metodo get che restituisce il valore di tipologiaPrimo
      * @return Ritorna il valore di tipologiaPrimo
@@ -42,16 +53,6 @@ public class PrimoPiatto extends Portata {
     }
 
 
-    /**
-     * Questo metodo ci permette di stampare tutti i parametri di un primo piatto
-     */
-    public void printPrimoPiatto(){
-        this.printPortataGenerica();
-        if (getTipologiaPrimo()!=null){
-            System.out.print(" e' un primo piatto a base di"+" "+ tipologiaPrimo.name().toLowerCase());
-            System.out.println("\n");
-        }
-    }
 }
 
 

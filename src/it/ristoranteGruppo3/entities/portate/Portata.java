@@ -59,10 +59,9 @@ public class Portata {
     /**
      * Questo metodo stampa la portata
      */
-    public void printPortataGenerica(){
+    public void printPortata(){
         System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
-        if(descrizione!=null){
-            System.out.println(String.format("|%s|", getDescrizione()));
-        }
+            System.out.println(String.format("%s", getDescrizione()));
+
     }
 }

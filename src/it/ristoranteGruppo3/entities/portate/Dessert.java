@@ -64,7 +64,7 @@ public class Dessert extends Portata {
      *TODO inserire @Override in tutte classi figlie
      */
     public void printDessert(){
-        super.printPortataGenerica();
+        super.printPortata();
         if (getTipoCottura()!= null){
             System.out.print(" e' un dessert con tipologia di cottura"+" "+ tipoCottura.name().toLowerCase());
             System.out.print(" " + "contiene alcohol? " + isAlcolico() + " " + "e' artigianale? " + isArtigianale());

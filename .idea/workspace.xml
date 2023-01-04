@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="&quot;aggiunta la cottura dei secondi&quot;" />
+    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="Merge 19/12">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_16_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_16_43__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_43_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_43__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_44_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_17_44__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2022_00_55_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2022_00_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2022_00_55__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2022_00_55__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_15_41_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_15_41__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_16__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_20_12_2022_18_17__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2022_19_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2022_19_32__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2022_17_06__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypePrimoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypePrimoEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +45,10 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="33fefd3e62d47a81684e80397e7a0d8f9af06d57" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

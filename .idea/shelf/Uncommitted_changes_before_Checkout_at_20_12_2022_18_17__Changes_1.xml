@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_20_12_2022_18_17_[Changes]1" date="1671556638143" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17_[Changes]1/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 20/12/2022 18:17 [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" value="out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/Antipasto.class" />
-    <option name="AFTER_PATH" value="out/production/ristoranteGruppo3Java8/it/ristoranteGruppo3/Entities/portate/Antipasto.class" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17_[Changes]1/Antipasto.class" />
-  </binary>
-</changelist>

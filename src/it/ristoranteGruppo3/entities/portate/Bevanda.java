@@ -36,7 +36,7 @@ public class Bevanda extends Portata {
      */
 
     public void printBevanda(){
-        super.printPortataGenerica();
+        super.printPortata();
         if (isAlcohol()){
             System.out.print(" " + "questa bevanda contiene alcohol");
 

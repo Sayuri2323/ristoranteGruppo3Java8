@@ -42,8 +42,6 @@ public class Tester {
         menuCarne.addPortata(new Dessert("Tiramisu", 7, TypeEnum.CARNE, TypeCotturaEnum.SEMIFREDDO, ""));
         menuCarne.addPortata(new Dessert("torta di mandorle", 15, TypeEnum.CARNE,TypeCotturaEnum.SEMIFREDDO, ""));
         menuCarne.addPortata(new Dessert("Crostata di marmellata", 20, TypeEnum.CARNE,TypeCotturaEnum.SEMIFREDDO, ""));
-
-        menuCarne.printSecondi();
         System.out.println("--------------------------------------------------");
     }
 }
