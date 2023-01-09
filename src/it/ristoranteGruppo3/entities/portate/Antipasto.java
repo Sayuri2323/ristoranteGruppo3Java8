@@ -43,38 +43,11 @@ public class Antipasto extends Portata {
         this.tipoCottura = tipoCottura;
     }
 
-    /**
-     * Questo metodo stampa tutti i campi dell'antipasto
-     * TODO ciclare su punto values dell'enumerato e modificare il metodo
-     */
-    public void printAntipasto(){
-        super.printPortataGenerica();
-        if (getTipoCottura()!=null){
-            switch (getTipoCottura()){
-                case FRITTO:
-                    System.out.println("è un antipasto fritto");
-                    break;
-                case FORNO:
-                    System.out.println("è un antipasto al forno");
-                    break;
-                case VAPORE:
-                    System.out.println("è un antipasto al vapore");
-                    break;
-                case CRUDO:
-                    System.out.println("è un antipasto crudo");
-                    break;
-                case COTTO:
-                    System.out.println("è un antipasto cotto");
-                    break;
-                case BOLLITO:
-                    System.out.println("è un antipasto bollito");
-                    break;
-                default:
-                    System.out.println("Errore nel campo cottura");
-                    break;
-            }
-            System.out.println("\n");
-        }
-    }
 
+    public void printAntipasto(){
+        this.printPortataGenerica();
+        if (getTipoCottura()!=null){
+            System.out.print("Questo antipasto"+" "+ getTipoCottura().getCottura());
+            System.out.println("\n");
+        }}
 }
