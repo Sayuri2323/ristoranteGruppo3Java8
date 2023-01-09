@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="Merge 19/12">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" afterDir="false" />
-    </list>
+    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="&quot;aggiunta la cottura dei secondi&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,10 +17,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="33fefd3e62d47a81684e80397e7a0d8f9af06d57" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,7 +106,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature-conto" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>

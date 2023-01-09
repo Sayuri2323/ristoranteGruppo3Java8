@@ -22,41 +22,41 @@ public class SecondoPiatto extends Portata {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.typeCotturaEnum = typeCotturaEnum;
     }
+    /**
+     * Costruttore per tutte le portate che necessitano di un tipo di cottura
+     * @param namePortata Nome della portata
+     * @param pricePortata prezzo della portata
+     * @param typeEnum tipo della portata
+     * @param typeCotturaEnum tipo di cottura del secondo
+     */
+    public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum, TypeCotturaEnum typeCotturaEnum) {
+        super(namePortata, pricePortata, typeEnum);
+        this.typeCotturaEnum = typeCotturaEnum;
+    }
+    /**
+     * Costruttore per tutte le portate che non necessitano di una descrizione
+     * @param namePortata Nome della portata
+     * @param pricePortata prezzo della portata
+     * @param typeEnum tipo della portata
+     */
+    public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum) {
+        super(namePortata, pricePortata, typeEnum);
+    }
 
-    public TypeCotturaEnum getTypeCotturaEnum() {
+    public TypeCotturaEnum getTipoCottura() {
         return typeCotturaEnum;
     }
 
     public void setTypeCotturaEnum(TypeCotturaEnum typeCotturaEnum) {
         this.typeCotturaEnum = typeCotturaEnum;
     }
+
     public void printSecondoPiatto(){
-        this.printPortata();
-        if (getTypeCotturaEnum()!=null){
-            switch (typeCotturaEnum){
-                case FRITTO:
-                    System.out.println("è un secondo fritto");
-                    break;
-                case FORNO:
-                    System.out.println("è un secondo al forno");
-                    break;
-                case VAPORE:
-                    System.out.println("è un secondo al vapore");
-                    break;
-                case CRUDO:
-                    System.out.println("è un secondo crudo");
-                    break;
-                case COTTO:
-                    System.out.println("è un secondo cotto");
-                    break;
-                case BOLLITO:
-                    System.out.println("è un secondo bollito");
-                    break;
-                default:
-                    System.out.println("Errore nel campo cottura");
-                    break;
-            }
+        super.printPortataGenerica();
+        if (getTipoCottura()!= null){
+            System.out.print("Questo secondo piatto"+" "+ getTipoCottura().getCottura());
             System.out.println("\n");
+
         }
     }
 }

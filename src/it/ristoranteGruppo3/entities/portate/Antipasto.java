@@ -25,6 +25,15 @@ public class Antipasto extends Portata {
         this.tipoCottura=tipoCottura;
     }
 
+    /**
+     * Costruttore per tutte le portate che non necessitano di una descrizione
+     * @param namePortata Nome della portata
+     * @param pricePortata prezzo della portata
+     * @param typeEnum tipo della portata
+     */
+    public Antipasto(String namePortata, double pricePortata, TypeEnum typeEnum) {
+        super(namePortata, pricePortata, typeEnum);
+    }
 
     public TypeCotturaEnum getTipoCottura() {
         return tipoCottura;
@@ -39,7 +48,7 @@ public class Antipasto extends Portata {
      * TODO ciclare su punto values dell'enumerato e modificare il metodo
      */
     public void printAntipasto(){
-        super.printPortata();
+        super.printPortataGenerica();
         if (getTipoCottura()!=null){
             switch (getTipoCottura()){
                 case FRITTO:

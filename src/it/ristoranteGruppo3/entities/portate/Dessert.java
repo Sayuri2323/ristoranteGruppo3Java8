@@ -66,9 +66,11 @@ public class Dessert extends Portata {
     public void printDessert(){
         super.printPortata();
         if (getTipoCottura()!= null){
-            System.out.print(" e' un dessert con tipologia di cottura"+" "+ tipoCottura.name().toLowerCase());
+            System.out.print("Questo dessert"+" "+ getTipoCottura().getCottura());
+            System.out.println("\n");
             System.out.print(" " + "contiene alcohol? " + isAlcolico() + " " + "e' artigianale? " + isArtigianale());
             System.out.println("\n");
         }
     }
+
 }
