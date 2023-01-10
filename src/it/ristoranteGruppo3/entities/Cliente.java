@@ -33,6 +33,11 @@ public class Cliente {
      */
     private boolean billPayed;
 
+
+    private Integer numeroPersone;
+
+
+    private Integer numeroTavolo;
     /**
      * Costruttore del cliente
      * @param name Rappresenta il nome del cliente
@@ -86,17 +91,31 @@ public class Cliente {
         this.billPayed = billPayed;
     }
 
+    public Integer getNumeroPersone() {
+        return numeroPersone;
+    }
+
+    public Integer getNumeroTavolo() {
+        return numeroTavolo;
+    }
+
     /**
      * Questo metodo stampa i valori del cliente nel seguente formato -> nome+cognome+typeEnum
      */
     public void printCliente(){
         System.out.println(getSurname() + " " + getName() + " " + "Tipologia" + " " + getType());
     }
+
+    //TODO
     public void payBill(){
-        System.out.print("Il cliente" + " ");
-        this.printCliente();
-        System.out.print(" "+"Sta pagando il conto");
+        printBillInfo();
         setBillPayed(true);
+    }
+
+    private void printBillInfo() {
+        System.out.print("Il cliente" + " ");
+        printCliente();
+        System.out.print(" "+"Sta pagando il conto");
     }
 }
 

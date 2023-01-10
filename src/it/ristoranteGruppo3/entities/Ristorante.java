@@ -1,11 +1,15 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.enums.StatoTavoloEnum;
 import it.ristoranteGruppo3.entities.portate.Portata;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ristorante {
+
+
+    private static int idTavolo = 0;
     /**
      * Nome del ristorante
      */
@@ -18,10 +22,7 @@ public class Ristorante {
      * Capienza massima di clienti consentiti all'interno del ristorante
      */
     private int maxCapacity;
-    /**
-     * Numero di clienti attualmente presenti nel ristorante
-     */
-    private int currentNumberOfClients;
+
     /**
      * Sito web del ristorante
      */
@@ -58,7 +59,6 @@ public class Ristorante {
         this.maxCapacity = maxCapacity;
         this.webSite = webSite;
         this.phoneNumber = phoneNumber;
-        this.currentNumberOfClients = 0;
     }
 
     public List<Menu> getMenuRistorante() {
@@ -107,11 +107,24 @@ public class Ristorante {
      * il cliente verra' aggiunto solo se il valore currentNumberOfClients non avra' superato maxCapacity del ristorante
      * @param cliente il cliente da aggiungere
      */
+
+    //TODO i setter sporchi non si fanno mai perchè si perde il controllo del flusso
     public void setCliente(Cliente cliente) {
         if (currentNumberOfClients < maxCapacity) {
             getClienti().add(cliente);
-            currentNumberOfClients++;
         } else System.out.println("Il ristorante è pieno, la preghiamo di attendere");
+    }
+
+    private void prenota(Cliente cliente){
+
+        if (tavoli.size() < maxCapacity){
+            Tavolo tavolo = new Tavolo(idTavolo, StatoTavoloEnum.OCCUPATO, cliente.getNumeroPersone());
+            cliente.setIdTavolo(idTavolo);
+            tavoli.add(tavolo);
+            idTavolo++;
+        }
+
+
     }
 
 
@@ -163,6 +176,9 @@ public class Ristorante {
         } else {
             throw new IllegalArgumentException("Il cliente non è valido");
         }
+
+        //TODO una volta pagato si elimina il cliente dalla lista
+        removeCliente(cliente);
     }
     /**
      * Questo metodo elimina il cliente dalla lista dei clienti presenti nel ristorante solo se ha pagato il conto
@@ -170,10 +186,14 @@ public class Ristorante {
      * @throws IllegalArgumentException
      */
     public void removeCliente(Cliente cliente) throws IllegalArgumentException {
+
+        //TODO bisogna recupare l'id del tavolo dal cliente o cambiare lo stato del tavolo.
+        // vedere come usare il tutto
+
+
             if (getClienti().contains(cliente)) {
                 if (cliente.isBillPayed()) {
                     getClienti().remove(cliente);
-                    currentNumberOfClients--;
                 } else System.out.println("Il cliente non ha ancora pagato il conto");
             } else {
                 throw new IllegalArgumentException("Il cliente non è presente nel ristorante");

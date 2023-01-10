@@ -1,5 +1,6 @@
 package it.ristoranteGruppo3.entities.portate;
 
+import it.ristoranteGruppo3.entities.enums.PortataTypeEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 
@@ -17,7 +18,8 @@ public class Portata {
      * @param typeEnum tipo della portata
      * @param descrizione descrizione della portata
      */
-    public Portata(String namePortata, double pricePortata,TypeEnum typeEnum,String descrizione) {
+    //TODO settare questo nuovo field
+    public Portata(String namePortata, double pricePortata,TypeEnum typeEnum,String descrizione, PortataTypeEnum portataType) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
         this.typePortata = typeEnum;

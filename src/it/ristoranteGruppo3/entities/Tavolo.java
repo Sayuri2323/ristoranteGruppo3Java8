@@ -6,9 +6,12 @@ public class Tavolo {
         private int numeroTavolo;
         private StatoTavoloEnum statoDelTavolo;
 
+        //TODO
+        private Integer numeroPosti;
+
 
         //TODO togliamo riservato ed inseriamo un enumerato con più stati: libero, occupato, riservato
-        public Tavolo(int numeroTavolo, StatoTavoloEnum statoDelTavolo) {
+        public Tavolo(int numeroTavolo, StatoTavoloEnum statoDelTavolo, Integer numeroPersone) {
             this.numeroTavolo = numeroTavolo;
             this.statoDelTavolo=statoDelTavolo;
         }
@@ -33,6 +36,10 @@ public class Tavolo {
             this.numeroTavolo = numeroTavolo;
         }
 
+
+    public Integer getNumeroPosti() {
+        return numeroPosti;
     }
+}
 
 

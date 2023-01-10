@@ -1,5 +1,6 @@
 package it.ristoranteGruppo3.entities;
 
+import it.ristoranteGruppo3.entities.enums.PortataTypeEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 import it.ristoranteGruppo3.entities.portate.*;
 
@@ -54,62 +55,18 @@ public class Menu {
     /**
      * Questo metodo stampa tutti i primi piatti presenti all' interno del menu
      */
-    public void printPrimiPiatti(){
+
+    //TODO sistamare
+    public void printPrimiPiatti(PortataTypeEnum portataTypeEnum){
         System.out.println("Stampa dei primi piatti del menu  " + getTypeOfMenu().name().toLowerCase());
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica instanceof PrimoPiatto){
-                ((PrimoPiatto) portataGenerica).printPortata();
-            }
-        }
-    }
-    /**
-     * Questo metodo stampa tutti gli Antipasti presenti all' interno del menu
-     */
-    public void printAntipasti(){
-        System.out.println("Stampa degli antipasti del menu " + getTypeOfMenu().name().toLowerCase());
-        System.out.println("\n");
-        for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica instanceof Antipasto){
-                ((Antipasto) portataGenerica).printPortata();
+            if (portataGenerica.getPortataTypeEnum() == portataTypeEnum){
+                portataGenerica.printPortata();
             }
         }
     }
 
-    /**
-     * Questo metodo stampa tutti i Dessert presenti all' interno del menu
-     */
-    public void printDessert(){
-        System.out.println("Stampa dei Dessert del menu " + getTypeOfMenu().name().toLowerCase());
-        System.out.println("\n");
-        for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica instanceof Dessert){
-                ((Dessert) portataGenerica).printPortata();
-            }
-        }
-    }
-
-    /**
-     * Questo metodo stampa tutte le bevande presenti all' interno del menu
-     */
-    public void printBevanda(){
-        System.out.println("Stampa delle Bevande del menu " + getTypeOfMenu().name().toLowerCase());
-        System.out.println("\n");
-        for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica instanceof Bevanda){
-                ((Bevanda) portataGenerica).printPortata();
-            }
-        }
-    }
-    public void printSecondi(){
-        System.out.println("Stampa dei secondi del menu " + getTypeOfMenu().name().toLowerCase());
-        System.out.println("\n");
-        for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica instanceof SecondoPiatto){
-                ((SecondoPiatto) portataGenerica).printPortata();
-            }
-        }
-    }
 
 }
 
