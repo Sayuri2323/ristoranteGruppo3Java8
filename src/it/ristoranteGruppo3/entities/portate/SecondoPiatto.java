@@ -23,7 +23,7 @@ public class SecondoPiatto extends Portata {
         this.typeCotturaEnum = typeCotturaEnum;
     }
 
-    public TypeCotturaEnum getTipoCottura() {
+    private TypeCotturaEnum getTipoCottura() {
         return typeCotturaEnum;
     }
 
@@ -31,8 +31,10 @@ public class SecondoPiatto extends Portata {
         this.typeCotturaEnum = typeCotturaEnum;
     }
 
-    public void printSecondoPiatto(){
-        super.printPortata();
+    @Override
+    public void printPortata(){
+        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println(String.format("%s", getDescrizione()));
         if (getTipoCottura()!= null){
             System.out.print("Questo secondo piatto"+" "+ getTipoCottura().getCottura());
             System.out.println("\n");

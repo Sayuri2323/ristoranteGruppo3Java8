@@ -10,6 +10,8 @@ import it.ristoranteGruppo3.entities.enums.*;
 
 public class PrimoPiatto extends Portata {
     private TypePrimoEnum tipologiaPrimo;
+    private TypeCotturaEnum typeCotturaEnum;
+
 
     /**
      * Costruttore All args
@@ -20,12 +22,11 @@ public class PrimoPiatto extends Portata {
      * possibili valori MINESTRA,PASTA,RISO,ALTRO
      * @param descrizione descrizione della portata
      */
-    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,TypePrimoEnum tipologiaPrimo,String descrizione) {
+    public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,TypePrimoEnum tipologiaPrimo,TypeCotturaEnum typeCotturaEnum,String descrizione) {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.tipologiaPrimo = tipologiaPrimo;
+        this.typeCotturaEnum = typeCotturaEnum;
     }
-
-
     /**
      * Questo metodo ci permette di stampare tutti i parametri di un primo piatto
      */
@@ -34,6 +35,8 @@ public class PrimoPiatto extends Portata {
         System.out.println("-" + getNamePortata() + " " + String.format("%.2f",getPricePortata()) + "€");
         System.out.print(String.format("%s", getDescrizione()));
         System.out.println(" " + getTipologiaPrimo().getTipoPrimo());
+        System.out.print("Questo primo piatto"+" "+ getTipoCottura().getCottura());
+        System.out.println("\n");
     }
 
     /**
@@ -51,7 +54,13 @@ public class PrimoPiatto extends Portata {
     public void setTipologiaPrimo(TypePrimoEnum tipologiaPrimo) {
         this.tipologiaPrimo = tipologiaPrimo;
     }
+    public TypeCotturaEnum getTipoCottura() {
+        return typeCotturaEnum;
+    }
 
+    public void setTypeCotturaEnum(TypeCotturaEnum typeCotturaEnum) {
+        this.typeCotturaEnum = typeCotturaEnum;
+    }
 
 }
 

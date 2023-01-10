@@ -71,7 +71,7 @@ public class Menu {
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
             if (portataGenerica instanceof Antipasto){
-                ((Antipasto) portataGenerica).printAntipasto();
+                ((Antipasto) portataGenerica).printPortata();
             }
         }
     }
@@ -84,7 +84,7 @@ public class Menu {
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
             if (portataGenerica instanceof Dessert){
-                ((Dessert) portataGenerica).printDessert();
+                ((Dessert) portataGenerica).printPortata();
             }
         }
     }
@@ -97,7 +97,7 @@ public class Menu {
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
             if (portataGenerica instanceof Bevanda){
-                ((Bevanda) portataGenerica).printBevanda();
+                ((Bevanda) portataGenerica).printPortata();
             }
         }
     }
@@ -106,7 +106,7 @@ public class Menu {
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
             if (portataGenerica instanceof SecondoPiatto){
-                ((SecondoPiatto) portataGenerica).printSecondoPiatto();
+                ((SecondoPiatto) portataGenerica).printPortata();
             }
         }
     }

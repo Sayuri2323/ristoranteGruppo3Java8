@@ -4,8 +4,8 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 
 public class Portata {
-    private String namePortata;
-    private double pricePortata;
+    public String namePortata;
+    public double pricePortata;
     private TypeEnum typePortata;
 
     private String descrizione;

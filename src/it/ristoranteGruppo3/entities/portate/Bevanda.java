@@ -35,8 +35,10 @@ public class Bevanda extends Portata {
      * TODO refattorizzare con portata generica
      */
 
-    public void printBevanda(){
-        super.printPortata();
+    @Override
+    public void printPortata(){
+        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println(String.format("%s", getDescrizione()));
         if (isAlcohol()){
             System.out.print(" " + "questa bevanda contiene alcohol");
 

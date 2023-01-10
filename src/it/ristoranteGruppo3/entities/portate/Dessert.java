@@ -58,13 +58,10 @@ public class Dessert extends Portata {
         super(namePortata, pricePortata, typeEnum,descrizione);
         this.tipoCottura=tipoCottura;
     }
-
-    /**
-     * Questo metodo stampa tutti i campi del dessert
-     *TODO inserire @Override in tutte classi figlie
-     */
-    public void printDessert(){
-        super.printPortata();
+    @Override
+    public void printPortata(){
+        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println(String.format("%s", getDescrizione()));
         if (getTipoCottura()!= null){
             System.out.print("Questo dessert"+" "+ getTipoCottura().getCottura());
             System.out.println("\n");

@@ -33,14 +33,13 @@ public class Antipasto extends Portata {
         this.tipoCottura = tipoCottura;
     }
 
-
-    public void printAntipasto(){
-        super.printPortata();
+    @Override
+    public void printPortata(){
+        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println(String.format("%s", getDescrizione()));
         if (getTipoCottura()!= null){
             System.out.print("Questo antipasto"+" "+ getTipoCottura().getCottura());
             System.out.println("\n");
-
         }
     }
-
 }
