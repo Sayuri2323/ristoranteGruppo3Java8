@@ -5,11 +5,11 @@ import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 
 public class Portata {
-    public String namePortata;
-    public double pricePortata;
-    private TypeEnum typePortata;
-
+   private String namePortata;
+    private double pricePortata;
+    private TypeEnum type;
     private String descrizione;
+    private PortataTypeEnum portataType;
 
     /**
      * costruttore All args
@@ -22,9 +22,10 @@ public class Portata {
     public Portata(String namePortata, double pricePortata,TypeEnum typeEnum,String descrizione, PortataTypeEnum portataType) {
         this.namePortata = namePortata;
         this.pricePortata = pricePortata;
-        this.typePortata = typeEnum;
+        this.type = typeEnum;
         this.descrizione = descrizione;
     }
+
 
     public String getNamePortata() {
         return namePortata;
@@ -42,12 +43,20 @@ public class Portata {
         this.pricePortata = pricePortata;
     }
 
-    public TypeEnum getTypePortata() {
-        return typePortata;
+    public PortataTypeEnum getPortataType() {
+        return portataType;
     }
 
-    public void setTypePortata(TypeEnum typePortata) {
-        this.typePortata = typePortata;
+    public void setPortataType(PortataTypeEnum portataType) {
+        this.portataType = portataType;
+    }
+
+    public TypeEnum getType() {
+        return type;
+    }
+
+    public void setType(TypeEnum typePortata) {
+        this.type = typePortata;
     }
 
     public String getDescrizione() {

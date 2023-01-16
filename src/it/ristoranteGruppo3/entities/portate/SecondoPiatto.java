@@ -1,5 +1,6 @@
 package it.ristoranteGruppo3.entities.portate;
 
+import it.ristoranteGruppo3.entities.enums.PortataTypeEnum;
 import it.ristoranteGruppo3.entities.enums.TypeCotturaEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
@@ -19,7 +20,7 @@ public class SecondoPiatto extends Portata {
      */
 
     public SecondoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum, TypeCotturaEnum typeCotturaEnum ,String descrizione) {
-        super(namePortata, pricePortata, typeEnum,descrizione);
+        super(namePortata, pricePortata, typeEnum,descrizione, PortataTypeEnum.SECONDO);
         this.typeCotturaEnum = typeCotturaEnum;
     }
 
@@ -33,7 +34,7 @@ public class SecondoPiatto extends Portata {
 
     @Override
     public void printPortata(){
-        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println("-" + getNamePortata() + " " + String.format("%.2f",getPricePortata()) + "€");
         System.out.println(String.format("%s", getDescrizione()));
         if (getTipoCottura()!= null){
             System.out.print("Questo secondo piatto"+" "+ getTipoCottura().getCottura());

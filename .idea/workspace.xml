@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="aggiunto git ignore rimossa out">
-      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/PortataTypeEnum.java" afterDir="false" />
+    <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="risolti errori git">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_16_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2022_16_43__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2022_00_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_12_2022_00_55__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2022_18_17__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_17_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2022_17_45__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_11_2022_17_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_11_2022_17_06__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2022_17_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2022_19_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2022_19_32__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_21__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/StatoTavoloEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/StatoTavoloEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/PortataTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/PortataTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +39,7 @@
     <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="temp" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,17 +55,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Michele/OneDrive/Desktop/leadJava8/ristoranteGruppo3Java8",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michele/OneDrive/Desktop/leadJava8/ristoranteGruppo3Java8&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Michele\OneDrive\Desktop\leadJava8\ristoranteGruppo3Java8" />
@@ -153,7 +163,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature-conto" />
+                        <option value="enumportata" />
                       </list>
                     </value>
                   </entry>
@@ -181,7 +191,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java</url>
           <line>5</line>
-          <properties class="Tester" method="main">
+          <properties class="Tester">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

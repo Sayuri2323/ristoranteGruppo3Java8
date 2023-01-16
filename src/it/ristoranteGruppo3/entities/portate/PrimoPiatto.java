@@ -23,7 +23,7 @@ public class PrimoPiatto extends Portata {
      * @param descrizione descrizione della portata
      */
     public PrimoPiatto(String namePortata, double pricePortata, TypeEnum typeEnum,TypePrimoEnum tipologiaPrimo,TypeCotturaEnum typeCotturaEnum,String descrizione) {
-        super(namePortata, pricePortata, typeEnum,descrizione);
+        super(namePortata, pricePortata, typeEnum,descrizione, PortataTypeEnum.PRIMO);
         this.tipologiaPrimo = tipologiaPrimo;
         this.typeCotturaEnum = typeCotturaEnum;
     }

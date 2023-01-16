@@ -61,7 +61,7 @@ public class Menu {
         System.out.println("Stampa dei primi piatti del menu  " + getTypeOfMenu().name().toLowerCase());
         System.out.println("\n");
         for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica.getPortataTypeEnum() == portataTypeEnum){
+            if (portataGenerica.getPortataType() == portataTypeEnum){
                 portataGenerica.printPortata();
             }
         }

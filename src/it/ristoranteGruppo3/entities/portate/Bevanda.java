@@ -1,4 +1,5 @@
 package it.ristoranteGruppo3.entities.portate;
+import it.ristoranteGruppo3.entities.enums.PortataTypeEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 /**
@@ -17,7 +18,7 @@ public class Bevanda extends Portata {
      */
 
     public Bevanda(String namePortata, double pricePortata, TypeEnum typeEnum, boolean alcohol, String descrizione) {
-        super(namePortata, pricePortata, typeEnum,descrizione);
+        super(namePortata, pricePortata, typeEnum,descrizione, PortataTypeEnum.BEVANDA);
         this.alcohol = alcohol;
     }
 
@@ -37,7 +38,7 @@ public class Bevanda extends Portata {
 
     @Override
     public void printPortata(){
-        System.out.println("-" + namePortata + " " + String.format("%.2f",pricePortata) + "€");
+        System.out.println("-" + getNamePortata() + " " + String.format("%.2f",getPricePortata()) + "€");
         System.out.println(String.format("%s", getDescrizione()));
         if (isAlcohol()){
             System.out.print(" " + "questa bevanda contiene alcohol");
