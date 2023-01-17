@@ -1,8 +1,9 @@
 package it.ristoranteGruppo3.entities;
 
-import it.ristoranteGruppo3.entities.enums.StatoTavoloEnum;
-
 public class Tavolo {
+
+
+    //TODO mettiamo qualcosa per descrivere un tavolo, un metodo di stampa ecc ecc
         private int numeroTavolo;
 
         //TODO

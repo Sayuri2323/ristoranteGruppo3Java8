@@ -110,6 +110,7 @@ public class Ristorante {
      */
 
 
+    //TODO tiriamo fuori gli int statici, deve essere passato tutto dal costruttore
     public void prenota(Cliente cliente){
 
         if (maxCapacity != 0 && cliente.getNumeroPersone() < 17 ){
