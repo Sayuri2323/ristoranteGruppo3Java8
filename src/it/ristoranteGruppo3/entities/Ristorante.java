@@ -1,6 +1,5 @@
 package it.ristoranteGruppo3.entities;
 
-import it.ristoranteGruppo3.entities.enums.StatoTavoloEnum;
 import it.ristoranteGruppo3.entities.portate.Portata;
 
 import java.util.ArrayList;
