@@ -45,6 +45,8 @@ public class Ristorante {
      */
     private List<Menu> menuRistorante = new ArrayList<>();
 
+
+
     /**
      * Costruttore del Ristorante
      *
@@ -108,24 +110,23 @@ public class Ristorante {
      * @param cliente il cliente da aggiungere
      */
 
-    //TODO i setter sporchi non si fanno mai perchè si perde il controllo del flusso
-    public void setCliente(Cliente cliente) {
-        if (currentNumberOfClients < maxCapacity) {
-            getClienti().add(cliente);
-        } else System.out.println("Il ristorante è pieno, la preghiamo di attendere");
-    }
 
-    private void prenota(Cliente cliente){
+    public void prenota(Cliente cliente){
 
-        if (tavoli.size() < maxCapacity){
-            Tavolo tavolo = new Tavolo(idTavolo, StatoTavoloEnum.OCCUPATO, cliente.getNumeroPersone());
-            cliente.setIdTavolo(idTavolo);
-            tavoli.add(tavolo);
+        if (maxCapacity != 0 && cliente.getNumeroPersone() < 17 ){
+            Tavolo tavolo = new Tavolo(idTavolo, cliente.getNumeroPersone());
             idTavolo++;
+            cliente.setNumeroTavolo(idTavolo);
+            maxCapacity--;
+        }else if (cliente.getNumeroPersone() >= 17 ) {
+            System.out.println("Per eventi privati per favore contattare il numero del ristorante " + phoneNumber);
+        }else {
+            System.out.println("Siamo spiacenti ma il ristorante è al completo");
         }
 
 
     }
+
 
 
     public List<Tavolo> getTavoli() {

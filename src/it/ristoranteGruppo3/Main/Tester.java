@@ -5,7 +5,7 @@ import it.ristoranteGruppo3.entities.portate.*;
 public class Tester {
     public static void main(String[] args) {
         //creazione del nostro ristorante
-        Ristorante ristoranteGruppo3 = new Ristorante("Ristorante Gruppo 3", "Privet Drive n.4", 23,"www.google.com","333333333333");
+        Ristorante ristoranteGruppo3 = new Ristorante("Ristorante Gruppo 3", "Privet Drive n.4", 1,"www.google.com","333333333333");
         Menu menuCarne = new Menu(TypeEnum.CARNE);
         Menu menuPesce = new Menu(TypeEnum.PESCE);
         Menu menuVegano = new Menu(TypeEnum.VEGANO);
@@ -43,5 +43,6 @@ public class Tester {
         menuCarne.addPortata(new Dessert("torta di mandorle", 15, TypeEnum.CARNE,TypeCotturaEnum.SEMIFREDDO, ""));
         menuCarne.addPortata(new Dessert("Crostata di marmellata", 20, TypeEnum.CARNE,TypeCotturaEnum.SEMIFREDDO, ""));
         System.out.println("--------------------------------------------------");
+        Cliente cliente = new Cliente("Tony","Tammaro",TypeEnum.PESCE,10);
     }
 }
