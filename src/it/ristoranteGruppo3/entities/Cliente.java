@@ -34,7 +34,7 @@ public class Cliente {
     private boolean billPayed;
 
 
-    private Integer numeroPersone;
+    private Integer numeroPersone = 1;
 
 
     private Integer numeroTavolo;
@@ -44,10 +44,11 @@ public class Cliente {
      * @param surname Rappresenta cognome del cliente
      * @param type Rappresenta la tipollogia di menu preferita dal cliente
      */
-    public Cliente(String name, String surname, TypeEnum type) {
+    public Cliente(String name, String surname, TypeEnum type, Integer numeroPersone) {
         this.name = name;
         this.surname = surname;
         this.type = type;
+        this.numeroPersone = numeroPersone;
         this.billPayed = false;
     }
 
@@ -93,6 +94,10 @@ public class Cliente {
 
     public Integer getNumeroPersone() {
         return numeroPersone;
+    }
+
+    public void setNumeroTavolo(Integer numeroTavolo) {
+        this.numeroTavolo = numeroTavolo;
     }
 
     public Integer getNumeroTavolo() {

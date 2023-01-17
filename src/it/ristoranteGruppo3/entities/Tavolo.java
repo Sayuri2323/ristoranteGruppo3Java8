@@ -4,30 +4,15 @@ import it.ristoranteGruppo3.entities.enums.StatoTavoloEnum;
 
 public class Tavolo {
         private int numeroTavolo;
-        private StatoTavoloEnum statoDelTavolo;
 
         //TODO
         private Integer numeroPosti;
 
 
         //TODO togliamo riservato ed inseriamo un enumerato con più stati: libero, occupato, riservato
-        public Tavolo(int numeroTavolo, StatoTavoloEnum statoDelTavolo, Integer numeroPersone) {
+        public Tavolo(int numeroTavolo, Integer numeroPersone) {
             this.numeroTavolo = numeroTavolo;
-            this.statoDelTavolo=statoDelTavolo;
         }
-
-        public  void printTavoloDetails() {
-            System.out.println("Il tavolo numero " +numeroTavolo+ " è "+ statoDelTavolo );
-        }
-
-        public StatoTavoloEnum getStatoDelTavolo() {
-            return statoDelTavolo;
-        }
-
-        public void setStatoDelTavolo(StatoTavoloEnum statoDelTavolo ) {
-            this.statoDelTavolo = statoDelTavolo;
-        }
-
         public int getNumeroTavolo() {
             return numeroTavolo;
         }
