@@ -4,9 +4,9 @@ public enum TypeEnum {
 
     //TODO mettiamo la descrizione e la sua forma in stringa per stampare a modo?
 
-    CARNE,
-    PESCE,
-    VEGANO,
-    VEGETARIANO;
+    MEAT,
+    FISH,
+    VEGAN,
+    VEGETARIAN;
 
 }

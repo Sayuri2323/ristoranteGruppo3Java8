@@ -1,21 +1,21 @@
 package it.ristoranteGruppo3.entities;
 
-import it.ristoranteGruppo3.entities.enums.PortataTypeEnum;
+import it.ristoranteGruppo3.entities.enums.DishTypeEnum;
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
-import it.ristoranteGruppo3.entities.portate.*;
+import it.ristoranteGruppo3.entities.dishes.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
     /**
-     * Tipologia di menu
+     * type of menu
      */
     private TypeEnum typeOfMenu;
     /**
-     * Lista di portate presenti all'interno del menu
+     * list of dishes in the menu
      */
-    private List<Portata> listaPortate;
+    private List<Dish> dishList;
 
     /**
      * Costruttore del Menu
@@ -23,46 +23,46 @@ public class Menu {
      */
     public Menu(TypeEnum typeOfMenu) {
         this.typeOfMenu = typeOfMenu;
-        this.listaPortate = new ArrayList<>();
+        this.dishList = new ArrayList<>();
     }
 
     public TypeEnum getTypeOfMenu() {
         return typeOfMenu;
     }
 
-    public List<Portata> getListaPortate() {
-        return listaPortate;
+    public List<Dish> getDishesList() {
+        return dishList;
     }
 
 
     /**
-     * Questo metodo ci permette di aggiungere una portata al menu
-     * @param portata La portata da aggiungere al menu
+     * This method is adding dishes in the menu
+     * @param dish dish to add to the menu
      */
-    public void addPortata(Portata portata) {
-        getListaPortate().add(portata);
+    public void addDish(Dish dish) {
+        getDishesList().add(dish);
     }
 
     /**
-     * Questo metodo Stampa l'intero menu' secondo l'ordine stabilito dall' EnumPortataType
+     * this method prints the whole menu in the DishEnumType order
      */
     public void printMenu() {
-        for (Portata portata : listaPortate){
-            portata.printPortata();
+        for (Dish dish : dishList){
+            dish.printDish();
         }
     }
 
     /**
-     * Questo metodo stampa tutti i primi piatti presenti all' interno del menu
+     * this method prints all the first course in the menu
      */
 
     //TODO sistamare
-    public void printPrimiPiatti(PortataTypeEnum portataTypeEnum){
-        System.out.println("Stampa dei primi piatti del menu  " + getTypeOfMenu().name().toLowerCase());
+    public void firstCoursPrint(DishTypeEnum dishTypeEnum){
+        System.out.println("First course   " + getTypeOfMenu().name().toLowerCase());
         System.out.println("\n");
-        for (Portata portataGenerica: getListaPortate()) {
-            if (portataGenerica.getPortataType() == portataTypeEnum){
-                portataGenerica.printPortata();
+        for (Dish genericDish : getDishesList()) {
+            if (genericDish.getDishType() == dishTypeEnum){
+                genericDish.printDish();
             }
         }
     }

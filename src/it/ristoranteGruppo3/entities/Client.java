@@ -1,54 +1,50 @@
 package it.ristoranteGruppo3.entities;
 
 import it.ristoranteGruppo3.entities.enums.TypeEnum;
-import it.ristoranteGruppo3.entities.portate.Portata;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Questa classe rappresenta un cliente che frequentera' un determinato ristorante
  */
-public class Cliente {
+public class Client {
     /**
-     * Nome del cliente
+     * name of the client
      */
     private String name;
     /**
-     * Cognome del cliente
+     * surname of the client
      */
     private String surname;
     /**
-     * Tipologia Menu preferita dal Cliente
+     * Type of menu of the client
      */
     private TypeEnum type;
 
     /**
-     * Valore booleano che tiene traccia dei clienti che abbiano una prenotazione
+     * boolean value to know if the client booked
      */
     private boolean hasBooked = false;
 
     /**
-     * Valore booleano che tiene traccia dell avvenuto pagamento del cliente
+     * Boolean value to know if the client paid the bill
      */
     private boolean billPayed;
 
 
-    private Integer numeroPersone = 1;
+    private Integer numberOfPeople = 1;
 
 
-    private Integer numeroTavolo;
+    private Integer tableNumber;
     /**
-     * Costruttore del cliente
-     * @param name Rappresenta il nome del cliente
-     * @param surname Rappresenta cognome del cliente
-     * @param type Rappresenta la tipollogia di menu preferita dal cliente
+     * Constructor of Client
+     * @param name name of client
+     * @param surname surname of client
+     * @param type preferred menu type to client
      */
-    public Cliente(String name, String surname, TypeEnum type, Integer numeroPersone) {
+    public Client(String name, String surname, TypeEnum type, Integer numberOfPeople) {
         this.name = name;
         this.surname = surname;
         this.type = type;
-        this.numeroPersone = numeroPersone;
+        this.numberOfPeople = numberOfPeople;
         this.billPayed = false;
     }
 
@@ -92,23 +88,23 @@ public class Cliente {
         this.billPayed = billPayed;
     }
 
-    public Integer getNumeroPersone() {
-        return numeroPersone;
+    public Integer getNumberOfPeople() {
+        return numberOfPeople;
     }
 
-    public void setNumeroTavolo(Integer numeroTavolo) {
-        this.numeroTavolo = numeroTavolo;
+    public void setTableNumber(Integer tableNumber) {
+        this.tableNumber = tableNumber;
     }
 
-    public Integer getNumeroTavolo() {
-        return numeroTavolo;
+    public Integer getTableNumber() {
+        return tableNumber;
     }
 
     /**
-     * Questo metodo stampa i valori del cliente nel seguente formato -> nome+cognome+typeEnum
+     * this method prints the values of the client in this format -> name+surname+typeEnum
      */
-    public void printCliente(){
-        System.out.println(getSurname() + " " + getName() + " " + "Tipologia" + " " + getType());
+    public void printClient(){
+        System.out.println(getSurname() + " " + getName() + " " + "Menu" + " " + getType());
     }
 
     //TODO
@@ -118,9 +114,9 @@ public class Cliente {
     }
 
     private void printBillInfo() {
-        System.out.print("Il cliente" + " ");
-        printCliente();
-        System.out.print(" "+"Sta pagando il conto");
+        System.out.print("the client" + " ");
+        printClient();
+        System.out.print(" "+"is paying the bill");
     }
 }
 
