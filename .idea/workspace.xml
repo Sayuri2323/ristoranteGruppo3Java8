@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="risolti errori git">
-      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/dishes/Appetizers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/dishes/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/dishes/SecondCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/FirstCourseTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypeOfBaking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Tavolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/PortataTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/DishTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypeCotturaEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/enums/TypePrimoEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Antipasto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Bevanda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/dishes/Beverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/Portata.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/PrimoPiatto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/dishes/FirstCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/portate/SecondoPiatto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/entities/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -167,7 +150,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="enumportata" />
+                        <option value="tabledetails" />
                       </list>
                     </value>
                   </entry>
@@ -188,20 +171,5 @@
     <MESSAGE value="aggiunto git ignore rimossa out" />
     <option name="LAST_COMMIT_MESSAGE" value="aggiunto git ignore rimossa out" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/Tester.java</url>
-          <line>5</line>
-          <properties class="Tester" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

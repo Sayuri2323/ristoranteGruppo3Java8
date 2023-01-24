@@ -25,7 +25,7 @@ public class Restaurant {
     /**
      * Reasonable capacity of clients in a single reservation
      */
-    private int MaxNumber;
+    private int maxNumber;
 
     /**
      * Website of restaurant
@@ -65,7 +65,7 @@ public class Restaurant {
         this.maxCapacity = maxCapacity;
         this.webSite = webSite;
         this.phoneNumber = phoneNumber;
-        this.MaxNumber = MaxNumber;
+        this.maxNumber = MaxNumber;
     }
 
     public List<Menu> getMenuResturant() {
@@ -105,9 +105,18 @@ public class Restaurant {
         this.maxCapacity = maxCapacity;
     }
 
+    public int getMaxNumber() {
+        return maxNumber;
+    }
+
+    public void setMaxNumber(int maxNumber) {
+        this.maxNumber = maxNumber;
+    }
+
     public List<Client> getClients() {
         return clients;
     }
+
 
     /**
      * Questo metodo ci permette di inserire un nuovo cliente nella lista di clienti attualmente presenti nel ristorante
@@ -115,17 +124,17 @@ public class Restaurant {
      * @param client il cliente da aggiungere
      */
     public void reservation(Client client){
-        if (maxCapacity != 0 && client.getNumberOfPeople() < MaxNumber ){
-            Table table = new Table(idTable, client.getNumberOfPeople());
+        if (maxCapacity != 0 && client.getNumberOfPeople() < maxNumber){
             idTable++;
-            client.setTableNumber(idTable);
             maxCapacity--;
-        }else if (client.getNumberOfPeople() >= MaxNumber ) {
+            Table table = new Table(idTable, client.getNumberOfPeople());
+            table.setClient(client);
+            client.setTableNumber(idTable);
+        }else if (client.getNumberOfPeople() >= maxNumber) {
             System.out.println("For private events please contact the restaurant number " + phoneNumber);
         }else {
             System.out.println("We are very sorry but the restaurant is fully booked ");
         }
-
 
     }
 

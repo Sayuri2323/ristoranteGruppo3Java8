@@ -2,11 +2,16 @@ package it.ristoranteGruppo3.entities.enums;
 
 public enum TypeEnum {
 
-    //TODO mettiamo la descrizione e la sua forma in stringa per stampare a modo?
+    MEAT("Meat"),
+    FISH("Fish"),
+    VEGAN("Vegan"),
+    VEGETARIAN("Vegetarian");
+private String typeEnum;
+ TypeEnum(String typeEnum){
+     this.typeEnum=typeEnum;
+ }
 
-    MEAT,
-    FISH,
-    VEGAN,
-    VEGETARIAN;
-
+    public String getTypeEnum() {
+        return typeEnum;
+    }
 }
