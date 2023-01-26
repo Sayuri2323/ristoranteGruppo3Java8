@@ -1,6 +1,7 @@
 package it.ristoranteGruppo3.entities;
 
 import it.ristoranteGruppo3.entities.dishes.Dish;
+import it.ristoranteGruppo3.entities.enums.TypeEnum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,7 +78,7 @@ public class Restaurant {
      *
      * @param menu Menu to insert
      */
-    public void setMenuResturant(Menu menu) {
+    public void addMenuResturant(Menu menu) {
         getMenuResturant().add(menu);
     }
 

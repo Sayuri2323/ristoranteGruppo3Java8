@@ -2,6 +2,8 @@ import it.ristoranteGruppo3.entities.*;
 import it.ristoranteGruppo3.entities.enums.*;
 import it.ristoranteGruppo3.entities.dishes.*;
 
+import java.util.Arrays;
+
 public class Tester {
     public static void main(String[] args) {
         //creazione del nostro ristorante
@@ -12,11 +14,9 @@ public class Tester {
         Menu menuVegetariano = new Menu(TypeEnum.VEGETARIAN);
 
         //aggiungiamo i menu al ristorante
-        restaurantGruppo3.setMenuResturant(menuCarne);
-        restaurantGruppo3.setMenuResturant(menuPesce);
-        restaurantGruppo3.setMenuResturant(menuVegano);
-        restaurantGruppo3.setMenuResturant(menuVegetariano);
-
+        for (Menu menu : Arrays.asList(menuCarne, menuPesce, menuVegano, menuVegetariano)) {
+            restaurantGruppo3.addMenuResturant(menu);
+        }
         //creazione del menu carne che sara quello principale
         menuCarne.addDish(new Appetizers("Tartare di manzo gourmet", 25, TypeEnum.MEAT,"con scamone di manzo, fava fresca e pecorino romano", TypeOfBaking.RAW));
         menuCarne.addDish(new Appetizers("Mousse di mortadella", 13, TypeEnum.MEAT,"Mousse di mortadella con granella di pistacchi", TypeOfBaking.COOKED));
