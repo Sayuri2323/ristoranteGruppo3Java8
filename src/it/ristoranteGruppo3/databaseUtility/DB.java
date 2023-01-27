@@ -58,9 +58,5 @@ public class DB {
             e.printStackTrace();
         }
     }
-
-    public void dropDB() {
-
-    }
 }
 

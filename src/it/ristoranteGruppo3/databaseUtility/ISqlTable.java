@@ -9,7 +9,7 @@ public interface ISqlTable {
     void createTable(Connection connection) throws SQLException;
     void describeTable(Connection connection) throws SQLException;
 
-    void dropTable(Connection connection) throws SQLException;
+
 
 
 }

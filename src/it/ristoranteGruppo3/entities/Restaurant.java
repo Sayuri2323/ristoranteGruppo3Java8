@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Restaurant {
 
-
     private static int idTable = 0;
     /**
      * Name of restaurant

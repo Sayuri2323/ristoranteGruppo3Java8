@@ -4,6 +4,8 @@ import java.sql.*;
 
 public class ClientDB implements ISqlTable{
 
+    private final String tableName = "client";
+
     @Override
     public void createTable(Connection connection) throws SQLException {
         try(Statement createTable = connection.createStatement();){
@@ -22,10 +24,10 @@ public class ClientDB implements ISqlTable{
         ResultSet rs = null;
         ResultSetMetaData rsDesc = null;
         try(Statement describeTable = connection.createStatement();) {
-        rs =describeTable.executeQuery("SELECT * FROM client");
+        rs =describeTable.executeQuery("SELECT * FROM " + tableName);
         rsDesc = rs.getMetaData();
             System.out.printf("Client table has %d column\n",rsDesc.getColumnCount());
-            System.out.println("Table description");
+            System.out.println("Client Table description");
             for (int i = 1; i < rsDesc.getColumnCount(); i++) {
                 System.out.println("Column number " + i + " is " + rsDesc.getColumnName(i) + " and the type of column is " + rsDesc.getColumnTypeName(i));
             }
@@ -33,10 +35,6 @@ public class ClientDB implements ISqlTable{
         rs.close();
     }
 
-    @Override
-    public void dropTable(Connection connection) throws SQLException {
-
-    }
 
 
 }
