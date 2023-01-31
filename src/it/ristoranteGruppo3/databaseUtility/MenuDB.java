@@ -7,9 +7,13 @@ public class MenuDB implements ISqlTable {
     @Override
     public void createTable(Connection connection) throws SQLException {
         try(Statement createTable= connection.createStatement()){
-            createTable.execute("CREATE TABLE menu("+
-                    " menu_id INT PRIMARY KEY AUTO_INCREMENT,"+
-                    " typeEnum ENUM(\"MEAT\",\"VEGAN\",\"VEGETARIAN\",\"FISH\"));");
+            createTable.execute("CREATE TABLE " + tableName +
+                    "( id_menu INT AUTO_INCREMENT," +
+                    " `id_restaurant` INT NOT NULL,"+
+                    " typeEnum ENUM(\"MEAT\",\"VEGAN\",\"VEGETARIAN\",\"FISH\")," +
+                    " PRIMARY KEY (`id_menu`, `id_restaurant`),\n" +
+                    " FOREIGN KEY (`id_restaurant`)\n" +
+                    " REFERENCES restaurant (`id_restaurant`));");
         }
     }
 

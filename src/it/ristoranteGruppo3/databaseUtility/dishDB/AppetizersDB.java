@@ -1,21 +1,27 @@
-package it.ristoranteGruppo3.databaseUtility;
+package it.ristoranteGruppo3.databaseUtility.dishDB;
+
+import it.ristoranteGruppo3.databaseUtility.ISqlTable;
 
 import java.sql.*;
 
-public class RestaurantDB implements ISqlTable{
+public class AppetizersDB implements ISqlTable {
 
-    private final String tableName = "restaurant";
+    private final String tableName = "appetizers";
     @Override
     public void createTable(Connection connection) throws SQLException {
         try(Statement createTable = connection.createStatement();){
             createTable.execute("CREATE TABLE IF NOT EXISTS " + tableName + "(\n" +
-                    "  `id_restaurant` INT NOT NULL AUTO_INCREMENT,\n" +
-                    "  `restaurant_name` VARCHAR(64) NOT NULL,\n" +
-                    "  `restaurant_Address` VARCHAR(128) NOT NULL,\n" +
-                    "   max_capacity INT NOT NULL," +
-                    "  `web_site` VARCHAR(45) NULL,\n" +
-                    "  `phone_number` VARCHAR(10) NULL,\n" +
-                    "  PRIMARY KEY (`id_restaurant`))");
+                    "id_appetizers INT NOT NULL AUTO_INCREMENT,\n" +
+                    "dish_name VARCHAR(30) NOT NULL,"+
+                    "dish_price DOUBLE NOT NULL,"+
+                    "typeEnum ENUM(\"MEAT\",\"VEGAN\",\"VEGETARIAN\",\"FISH\") NOT NULL," +
+                    "type_of_baking ENUM(\"FRIED\", \"GRILLED\", \"BAKED\", \"STEAMED\", \"RAW\", \"COOKED\", \"BOILED\", \"PARFAIT\") NOT NULL," +
+                    "description VARCHAR(30) DEFAULT (\"\"),"+
+                    "dishType VARCHAR (16) NOT NULL DEFAULT('Appetizers')," +
+                    "`id_menu` INT NOT NULL,\n" +
+                    " PRIMARY KEY (`id_appetizers`,`id_menu`),\n" +
+                    " FOREIGN KEY (`id_menu`)\n" +
+                    " REFERENCES `menu` (`id_menu`));");
         }
     }
     @Override
@@ -32,6 +38,5 @@ public class RestaurantDB implements ISqlTable{
             }
         }
         rs.close();
-        }
     }
-
+}

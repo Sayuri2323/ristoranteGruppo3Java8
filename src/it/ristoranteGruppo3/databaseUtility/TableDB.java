@@ -2,22 +2,23 @@ package it.ristoranteGruppo3.databaseUtility;
 
 import java.sql.*;
 
-public class RestaurantDB implements ISqlTable{
+public class TableDB implements  ISqlTable{
 
-    private final String tableName = "restaurant";
+    private final String tableName = "`table`";
+
     @Override
     public void createTable(Connection connection) throws SQLException {
         try(Statement createTable = connection.createStatement();){
-            createTable.execute("CREATE TABLE IF NOT EXISTS " + tableName + "(\n" +
-                    "  `id_restaurant` INT NOT NULL AUTO_INCREMENT,\n" +
-                    "  `restaurant_name` VARCHAR(64) NOT NULL,\n" +
-                    "  `restaurant_Address` VARCHAR(128) NOT NULL,\n" +
-                    "   max_capacity INT NOT NULL," +
-                    "  `web_site` VARCHAR(45) NULL,\n" +
-                    "  `phone_number` VARCHAR(10) NULL,\n" +
-                    "  PRIMARY KEY (`id_restaurant`))");
+            createTable.execute("CREATE TABLE " + tableName +
+                    " ( id_table INT AUTO_INCREMENT," +
+                    "   number_of_seats INT NOT NULL," +
+                    "   id_restaurant INT NOT NULL," +
+                    "   PRIMARY KEY (id_table, id_restaurant)," +
+                    "   FOREIGN KEY (id_restaurant)" +
+                    "   REFERENCES restaurant (id_restaurant));");
         }
     }
+
     @Override
     public void describeTable(Connection connection) throws SQLException {
         ResultSet rs = null;
@@ -32,6 +33,5 @@ public class RestaurantDB implements ISqlTable{
             }
         }
         rs.close();
-        }
     }
-
+}

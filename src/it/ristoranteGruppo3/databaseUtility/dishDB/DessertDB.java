@@ -1,23 +1,30 @@
-package it.ristoranteGruppo3.databaseUtility;
+package it.ristoranteGruppo3.databaseUtility.dishDB;
+
+import it.ristoranteGruppo3.databaseUtility.ISqlTable;
 
 import java.sql.*;
 
-public class RestaurantDB implements ISqlTable{
+public class DessertDB implements ISqlTable {
+    private final String tableName = "dessert";
 
-    private final String tableName = "restaurant";
     @Override
     public void createTable(Connection connection) throws SQLException {
-        try(Statement createTable = connection.createStatement();){
+        try (Statement createTable = connection.createStatement();) {
             createTable.execute("CREATE TABLE IF NOT EXISTS " + tableName + "(\n" +
-                    "  `id_restaurant` INT NOT NULL AUTO_INCREMENT,\n" +
-                    "  `restaurant_name` VARCHAR(64) NOT NULL,\n" +
-                    "  `restaurant_Address` VARCHAR(128) NOT NULL,\n" +
-                    "   max_capacity INT NOT NULL," +
-                    "  `web_site` VARCHAR(45) NULL,\n" +
-                    "  `phone_number` VARCHAR(10) NULL,\n" +
-                    "  PRIMARY KEY (`id_restaurant`))");
+                    "id_dessert INT NOT NULL AUTO_INCREMENT,\n" +
+                    "dish_name VARCHAR(30) NOT NULL," +
+                    "dish_price DOUBLE NOT NULL," +
+                    "typeEnum ENUM(\"MEAT\",\"VEGAN\",\"VEGETARIAN\",\"FISH\")," +
+                    "description VARCHAR(30) DEFAULT (\"\"),"+
+                    "alcohol TINYINT NOT NULL DEFAULT (0)," +
+                    "dishType VARCHAR (16) NOT NULL DEFAULT('Dessert')," +
+                    "id_menu INT NOT NULL," +
+                    "PRIMARY KEY (id_dessert, id_menu)," +
+                    "FOREIGN KEY (id_menu)" +
+                    "REFERENCES menu (id_menu));");
         }
     }
+
     @Override
     public void describeTable(Connection connection) throws SQLException {
         ResultSet rs = null;
@@ -32,6 +39,5 @@ public class RestaurantDB implements ISqlTable{
             }
         }
         rs.close();
-        }
     }
-
+}

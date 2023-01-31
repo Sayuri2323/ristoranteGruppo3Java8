@@ -12,7 +12,7 @@ public class DishDB implements ISqlTable{
                     "dish_name VARCHAR(30) NOT NULL,"+
                     "dish_price DOUBLE NOT NULL,"+
                     "typeEnum ENUM(\"MEAT\",\"VEGAN\",\"VEGETARIAN\",\"FISH\"),"+
-                    "description VARCHAR(30) NOT NULL,"+
+                    "description VARCHAR(30),"+
                     "dishTypeEnum ENUM(\"APPETIZER\",\"FIRST\",\"SECOND\",\"DESSERT\",\"BEVERAGE\"));");
         }
         }

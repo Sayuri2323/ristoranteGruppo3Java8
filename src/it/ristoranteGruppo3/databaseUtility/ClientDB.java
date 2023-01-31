@@ -4,18 +4,21 @@ import java.sql.*;
 
 public class ClientDB implements ISqlTable{
 
-    private final String tableName = "client";
+    private final String tableName = "`client`";
 
     @Override
     public void createTable(Connection connection) throws SQLException {
         try(Statement createTable = connection.createStatement();){
-            createTable.execute("CREATE TABLE client(" +
-                    " client_id INT PRIMARY KEY AUTO_INCREMENT," +
-                    " name VARCHAR (20) NOT NULL," +
-                    " surname VARCHAR (20) NOT NULL," +
-                    " typeEnum ENUM(\"MEAT\",\"VEGAN\",\"VEGETARIAN\",\"FISH\")," +
+            createTable.execute("CREATE TABLE " + tableName +
+                    " (id_client INT AUTO_INCREMENT," +
+                    " name VARCHAR (32) NOT NULL," +
+                    " surname VARCHAR (32) NOT NULL," +
+                    " typeEnum ENUM('MEAT','VEGAN','VEGETARIAN','FISH') NOT NULL," +
                     " has_payed BOOLEAN NOT NULL DEFAULT (FALSE)," +
-                    " number_of_peaple INT NOT NULL DEFAULT (0));");
+                    " number_of_peaple INT NOT NULL DEFAULT (0)," +
+                    " id_restaurant INT NOT NULL," +
+                    " PRIMARY KEY(id_client,id_restaurant)," +
+                    " FOREIGN KEY (id_restaurant) REFERENCES restaurant (id_restaurant));");
         }
     }
 
@@ -34,7 +37,4 @@ public class ClientDB implements ISqlTable{
         }
         rs.close();
     }
-
-
-
 }
