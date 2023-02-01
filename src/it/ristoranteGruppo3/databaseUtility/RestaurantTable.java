@@ -2,7 +2,7 @@ package it.ristoranteGruppo3.databaseUtility;
 
 import java.sql.*;
 
-public class RestaurantDB implements ISqlTable{
+public class RestaurantTable implements ISqlTable{
 
     private final String tableName = "restaurant";
     @Override

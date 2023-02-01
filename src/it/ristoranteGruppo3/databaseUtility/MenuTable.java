@@ -2,7 +2,7 @@ package it.ristoranteGruppo3.databaseUtility;
 
 import java.sql.*;
 
-public class MenuDB implements ISqlTable {
+public class MenuTable implements ISqlTable {
     private final String tableName = "menu";
     @Override
     public void createTable(Connection connection) throws SQLException {

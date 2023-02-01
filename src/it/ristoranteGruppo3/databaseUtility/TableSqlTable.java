@@ -2,7 +2,7 @@ package it.ristoranteGruppo3.databaseUtility;
 
 import java.sql.*;
 
-public class TableDB implements  ISqlTable{
+public class TableSqlTable implements  ISqlTable{
 
     private final String tableName = "`table`";
 

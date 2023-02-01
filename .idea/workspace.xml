@@ -4,8 +4,12 @@
     <list default="true" id="4bfb907a-1830-4788-864b-333a5b9ed4ab" name="Changes" comment="Aggiunte descrizioni StatoTavoloEnum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/Main/SQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/SqlTableFactory/ClientDBInjection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/SqlTableFactory/SqlTableGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/ClientDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/ClientTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/ISqlTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/ISqlTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/MenuDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/MenuTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/RestaurantDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/RestaurantTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/TableDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/ristoranteGruppo3/databaseUtility/TableSqlTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
