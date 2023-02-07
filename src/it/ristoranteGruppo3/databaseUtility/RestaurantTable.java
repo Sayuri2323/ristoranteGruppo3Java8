@@ -36,6 +36,6 @@ public class RestaurantTable implements ISqlTable{
     public void insertInto(Connection connection, String restaurant_name,String restaurant_Address,int max_capacity,String web_site, int phone_number) throws SQLException {
         Statement statement = connection.createStatement();
         statement.executeUpdate("INSERT INTO `test`.`restaurant` (`restaurant_name`, `restaurant_Address`, `max_capacity`, `web_site`, `phone_number`) VALUES ('"+ restaurant_name +"', '"+restaurant_Address + "', '"+ max_capacity +"', '"+web_site+"', '"+ phone_number +"');\n");
-   }double
+   }
     }
 
