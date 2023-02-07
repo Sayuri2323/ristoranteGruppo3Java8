@@ -21,7 +21,7 @@ public class Database {
      * @param password la passord dell'utente del database
      * @param databaseName il nome del database da creare
      */
-    private Database(String user, String password, String databaseName,String url) {
+    public Database(String user, String password, String databaseName, String url) {
         this.user = user;
         this.password = password;
         this.databaseName = databaseName;

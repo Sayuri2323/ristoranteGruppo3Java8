@@ -1,11 +1,14 @@
+import it.ristoranteGruppo3.databaseUtility.Database;
 import it.ristoranteGruppo3.entities.*;
 import it.ristoranteGruppo3.entities.enums.*;
 import it.ristoranteGruppo3.entities.dishes.*;
 
+
+import java.sql.SQLException;
 import java.util.Arrays;
 
 public class Tester {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         //creazione del nostro ristorante
         Restaurant restaurantGruppo3 = new Restaurant("Ristorante Gruppo 3", "Privet Drive n.4", 1,17,"www.google.com","333333333333");
         Menu menuCarne = new Menu(TypeEnum.MEAT);
@@ -44,5 +47,6 @@ public class Tester {
         menuCarne.addDish(new Dessert("Crostata di marmellata", 20, TypeEnum.MEAT, TypeOfBaking.PARFAIT, ""));
         System.out.println("--------------------------------------------------");
         Client client = new Client("Tony","Tammaro",TypeEnum.FISH,10);
+        Database database = new Database("root", "J6q2rM62b11%B2D%CMzY", "Test", "jdbc:mysql://localhost:3306/");
     }
 }

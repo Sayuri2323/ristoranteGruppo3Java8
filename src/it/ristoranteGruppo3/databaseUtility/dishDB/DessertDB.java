@@ -1,6 +1,8 @@
 package it.ristoranteGruppo3.databaseUtility.dishDB;
 
 import it.ristoranteGruppo3.databaseUtility.ISqlTable;
+import it.ristoranteGruppo3.entities.enums.TypeEnum;
+import it.ristoranteGruppo3.entities.enums.TypeOfBaking;
 
 import java.sql.*;
 
@@ -38,6 +40,6 @@ public class DessertDB implements ISqlTable {
                 System.out.println("Column number " + i + " is " + rsDesc.getColumnName(i) + " and the type of column is " + rsDesc.getColumnTypeName(i));
             }
         }
-        rs.close();
+
     }
 }
